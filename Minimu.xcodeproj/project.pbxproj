@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141CDCFA2790AFDF003754C9 /* onBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDCF92790AFDF003754C9 /* onBoardingView.swift */; };
 		141CDD012791B420003754C9 /* ClutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDD002791B420003754C9 /* ClutterView.swift */; };
 		141CDD032791B447003754C9 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDD022791B447003754C9 /* ProcessView.swift */; };
 		14399E3627922D4F00D455CF /* Checkmarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E3527922D4F00D455CF /* Checkmarker.swift */; };
 		14399E382792348300D455CF /* AchievedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E372792348300D455CF /* AchievedCard.swift */; };
 		14399E3B27923F8900D455CF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E3A27923F8900D455CF /* ColorExtension.swift */; };
+		14399E3D2793286100D455CF /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E3C2793286100D455CF /* Scroll.swift */; };
+		14399E3F2793391200D455CF /* NewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E3E2793391200D455CF /* NewDetail.swift */; };
+		14399E41279339F300D455CF /* Onboarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E40279339F300D455CF /* Onboarding1View.swift */; };
+		14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4227933A4900D455CF /* Onboarding2View.swift */; };
+		14399E4527933A5B00D455CF /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4427933A5B00D455CF /* Onboarding3View.swift */; };
+		14399E4727933B1B00D455CF /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4627933B1B00D455CF /* OnboardingButton.swift */; };
 		147028E7278F211700D4A106 /* MinimuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147028E6278F211700D4A106 /* MinimuApp.swift */; };
 		147028E9278F211700D4A106 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147028E8278F211700D4A106 /* ContentView.swift */; };
 		147028EB278F211A00D4A106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147028EA278F211A00D4A106 /* Assets.xcassets */; };
@@ -22,12 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		141CDCF92790AFDF003754C9 /* onBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingView.swift; sourceTree = "<group>"; };
 		141CDD002791B420003754C9 /* ClutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClutterView.swift; sourceTree = "<group>"; };
 		141CDD022791B447003754C9 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
 		14399E3527922D4F00D455CF /* Checkmarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmarker.swift; sourceTree = "<group>"; };
 		14399E372792348300D455CF /* AchievedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievedCard.swift; sourceTree = "<group>"; };
 		14399E3A27923F8900D455CF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		14399E3C2793286100D455CF /* Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
+		14399E3E2793391200D455CF /* NewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDetail.swift; sourceTree = "<group>"; };
+		14399E40279339F300D455CF /* Onboarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1View.swift; sourceTree = "<group>"; };
+		14399E4227933A4900D455CF /* Onboarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
+		14399E4427933A5B00D455CF /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
+		14399E4627933B1B00D455CF /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
 		147028E3278F211700D4A106 /* Minimu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minimu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147028E6278F211700D4A106 /* MinimuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimuApp.swift; sourceTree = "<group>"; };
 		147028E8278F211700D4A106 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +63,6 @@
 			children = (
 				147028E6278F211700D4A106 /* MinimuApp.swift */,
 				147028E8278F211700D4A106 /* ContentView.swift */,
-				141CDCF92790AFDF003754C9 /* onBoardingView.swift */,
 				141CDCFF2791B3E2003754C9 /* Views */,
 				141CDCFE2791B2FF003754C9 /* Componentes */,
 				14399E3927923F6900D455CF /* Extensions */,
@@ -66,6 +75,9 @@
 			children = (
 				14399E3527922D4F00D455CF /* Checkmarker.swift */,
 				14399E372792348300D455CF /* AchievedCard.swift */,
+				14399E3C2793286100D455CF /* Scroll.swift */,
+				14399E3E2793391200D455CF /* NewDetail.swift */,
+				14399E4627933B1B00D455CF /* OnboardingButton.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -75,6 +87,9 @@
 			children = (
 				141CDD022791B447003754C9 /* ProcessView.swift */,
 				141CDD002791B420003754C9 /* ClutterView.swift */,
+				14399E40279339F300D455CF /* Onboarding1View.swift */,
+				14399E4227933A4900D455CF /* Onboarding2View.swift */,
+				14399E4427933A5B00D455CF /* Onboarding3View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,11 +211,16 @@
 				141CDD012791B420003754C9 /* ClutterView.swift in Sources */,
 				147028F0278F211A00D4A106 /* Persistence.swift in Sources */,
 				14399E382792348300D455CF /* AchievedCard.swift in Sources */,
+				14399E3F2793391200D455CF /* NewDetail.swift in Sources */,
 				147028E9278F211700D4A106 /* ContentView.swift in Sources */,
+				14399E41279339F300D455CF /* Onboarding1View.swift in Sources */,
+				14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */,
+				14399E3D2793286100D455CF /* Scroll.swift in Sources */,
 				141CDD032791B447003754C9 /* ProcessView.swift in Sources */,
+				14399E4527933A5B00D455CF /* Onboarding3View.swift in Sources */,
+				14399E4727933B1B00D455CF /* OnboardingButton.swift in Sources */,
 				14399E3627922D4F00D455CF /* Checkmarker.swift in Sources */,
 				147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */,
-				141CDCFA2790AFDF003754C9 /* onBoardingView.swift in Sources */,
 				147028E7278F211700D4A106 /* MinimuApp.swift in Sources */,
 				14399E3B27923F8900D455CF /* ColorExtension.swift in Sources */,
 			);

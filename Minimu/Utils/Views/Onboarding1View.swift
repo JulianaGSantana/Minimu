@@ -1,14 +1,14 @@
 //
-//  onBoardingView.swift
+//  Onboarding1View.swift
 //  Minimu
 //
-//  Created by Juliana Santana on 13/01/22.
+//  Created by Juliana Santana on 15/01/22.
 //
 
 import Combine
 import SwiftUI
 
-struct OnboardingView: View {
+struct Onboarding1View: View {
   //  @EnvironmentObject var viewlaunch: ViewLaunch
     var body: some View {
         VStack {
@@ -46,11 +46,12 @@ struct OnboardingView: View {
 }
 
 
-struct OnboardingView_Previews: PreviewProvider {
+struct Onboarding1View_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        Onboarding1View()
     }
 }
+
 
 
 

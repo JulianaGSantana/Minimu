@@ -28,31 +28,28 @@ struct ProcessView: View {
                         .padding(.leading)
 
                     Checkmarker()
+                        .ignoresSafeArea()
                         
 
            Text("Achievements")
                         .font(.title.bold())
+                        .padding(.leading)
                    
                     Text("Achieved")
                         .font(.title3.bold())
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHGrid(rows: [GridItem(.fixed(0))], spacing: 20) {
-                            ForEach(0...4, id: \.self) { item in
-                                AchievedCard(imageName: "imageTeste", text: "oiiii")
-                            }
-                        }
-                        
-                    } .frame(height: 220)
-                    .ignoresSafeArea()
+                        .padding(.leading)
+                    Scroll()
                        
                     Text("Blocked")
                         .font(.title3.bold())
+                        .padding(.leading)
+                    Scroll()
             }.navigationTitle("Process")
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .background(Color.backgroundColorGrey)
                 
-    }
+    } 
     }
 }
 struct ProcessView_Previews: PreviewProvider {

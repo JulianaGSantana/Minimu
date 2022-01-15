@@ -31,7 +31,7 @@ struct AchievedCard: View {
         }.background(Color .cardColor)
           //  .shadow(radius: 4)
             .cornerRadius(10)
-        } .shadow(color: .secondary, radius: 2, x: 4, y: 4)
+        } .shadow(color: .secondary, radius: 1, x: 4, y: 4)
     }
         
     }
