@@ -24,10 +24,13 @@ struct NewDetail: View {
 
                 VStack(alignment: .leading) {
                     Text(title).bold()
+                    
                 
                     Text(description)
+                        .foregroundColor(.secondary)
                      //   .font(.subheadline)
                         .fixedSize(horizontal: false, vertical: true)
+                      
                 }
             }.frame(width: 340, height: 100)
         }
