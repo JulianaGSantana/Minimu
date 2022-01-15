@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-
 struct ProcessView: View {
+    @State var showSheetView = false
+
     var body: some View {
         NavigationView{
             ScrollView(.vertical) {
@@ -18,10 +19,26 @@ struct ProcessView: View {
                         .font(.title.bold())
                       .padding(.leading)
                     
+                    HStack{
+                    
                     Text("Material Minimalism")
                         .font(.title3.bold())
                         .padding(.leading)
+                        
+                        Spacer()
+                     
+                     
+                        Button(action: {
+                                   self.showSheetView.toggle()
+                               }) {
+                                   Image(systemName: "info.circle")
+                               }.sheet(isPresented: $showSheetView) {
+                                   InformationView()
+                               } .padding(.trailing)
+                            .font(.system(size: 20))
+                            
                     
+                }
                     Text("Wardrobe")
                         .font(.headline)
                         .foregroundColor(Color.secondary)
@@ -39,6 +56,7 @@ struct ProcessView: View {
                         .font(.title3.bold())
                         .padding(.leading)
                     Scroll()
+                       
                        
                     Text("Blocked")
                         .font(.title3.bold())

@@ -13,35 +13,23 @@ struct Onboarding1View: View {
     var body: some View {
         VStack {
             Spacer()
-                Text("What's New")
+                Text("Hi!")
                     .fontWeight(.heavy)
-                    .font(.system(size: 50))
-                    .frame(width: 300, alignment: .leading)
+                    .font(.system(size: 35))
+                    .frame(width: 300, alignment: .center)
         
                 
                 VStack(alignment: .leading) {
-                    NewDetail(image: "heart.fill", imageColor: .pink, title: "More Personalized", description: "Top Stories picked for you and recommendations from siri.")
-                    NewDetail(image: "paperclip", imageColor: .red, title: "New Spotlight Tab", description: "Discover great stories selected by our editors.")
-                    NewDetail(image: "play.rectangle.fill", imageColor: .blue, title: "Video In Today View", description: "The day's best videos, right in the News widget.")
+                    NewDetail(image: "heart.fill", imageColor: .pink, title: "Understand minimalism", description: "Being minimalist is a process of reflection.")
+                    NewDetail(image: "paperclip", imageColor: .red, title: "Start your detachment process", description: "With small periodic tasks, you'll start to sort out items or actions that don't make you happy.")
+                    NewDetail(image: "play.rectangle.fill", imageColor: .blue, title: "Receive notifications", description: "So you never forget to meet the goals  on the chosen days.")
+                    NewDetail(image: "play.rectangle.fill", imageColor: .blue, title: "See results", description: "At the end of each stage you will see how many items you managed to let go of.")
             }
 
             Spacer()
             
-            Button(action: {
-                UserDefaults.standard.set(true, forKey: "LaunchBefore")
-                withAnimation(){
-          //          self.viewlaunch.currentPage = "ContentView"
-                }
-            }){
-            Text("Next")
-                .foregroundColor(.white)
-                .font(.headline)
-                .frame(width: 350, height: 60)
-                .background(Color.blue)
-                .cornerRadius(15)
-                .padding(.top, 50)
-            }
-        }
+            OnboardingButton()
+        } .background(Color.backgroundColorGrey)
     }
 }
 

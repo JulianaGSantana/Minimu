@@ -18,6 +18,8 @@
 		14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4227933A4900D455CF /* Onboarding2View.swift */; };
 		14399E4527933A5B00D455CF /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4427933A5B00D455CF /* Onboarding3View.swift */; };
 		14399E4727933B1B00D455CF /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4627933B1B00D455CF /* OnboardingButton.swift */; };
+		14399E4927936BDB00D455CF /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4827936BDB00D455CF /* InformationView.swift */; };
+		14399E4B27936F3700D455CF /* InformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E4A27936F3700D455CF /* InformationCard.swift */; };
 		147028E7278F211700D4A106 /* MinimuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147028E6278F211700D4A106 /* MinimuApp.swift */; };
 		147028E9278F211700D4A106 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147028E8278F211700D4A106 /* ContentView.swift */; };
 		147028EB278F211A00D4A106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147028EA278F211A00D4A106 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		14399E4227933A4900D455CF /* Onboarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
 		14399E4427933A5B00D455CF /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 		14399E4627933B1B00D455CF /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
+		14399E4827936BDB00D455CF /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		14399E4A27936F3700D455CF /* InformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCard.swift; sourceTree = "<group>"; };
 		147028E3278F211700D4A106 /* Minimu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minimu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147028E6278F211700D4A106 /* MinimuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimuApp.swift; sourceTree = "<group>"; };
 		147028E8278F211700D4A106 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				14399E3527922D4F00D455CF /* Checkmarker.swift */,
+				14399E4A27936F3700D455CF /* InformationCard.swift */,
 				14399E372792348300D455CF /* AchievedCard.swift */,
 				14399E3C2793286100D455CF /* Scroll.swift */,
 				14399E3E2793391200D455CF /* NewDetail.swift */,
@@ -90,6 +95,7 @@
 				14399E40279339F300D455CF /* Onboarding1View.swift */,
 				14399E4227933A4900D455CF /* Onboarding2View.swift */,
 				14399E4427933A5B00D455CF /* Onboarding3View.swift */,
+				14399E4827936BDB00D455CF /* InformationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				141CDD012791B420003754C9 /* ClutterView.swift in Sources */,
+				14399E4B27936F3700D455CF /* InformationCard.swift in Sources */,
+				14399E4927936BDB00D455CF /* InformationView.swift in Sources */,
 				147028F0278F211A00D4A106 /* Persistence.swift in Sources */,
 				14399E382792348300D455CF /* AchievedCard.swift in Sources */,
 				14399E3F2793391200D455CF /* NewDetail.swift in Sources */,
