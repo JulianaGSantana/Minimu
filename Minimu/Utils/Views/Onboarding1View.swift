@@ -10,7 +10,9 @@ import SwiftUI
 
 struct Onboarding1View: View {
   //  @EnvironmentObject var viewlaunch: ViewLaunch
+  
     var body: some View {
+        NavigationView{
         VStack {
             Spacer()
                 Text("Hi!")
@@ -25,11 +27,19 @@ struct Onboarding1View: View {
                     NewDetail(image: "play.rectangle.fill", imageColor: .blue, title: "Receive notifications", description: "So you never forget to meet the goals  on the chosen days.")
                     NewDetail(image: "play.rectangle.fill", imageColor: .blue, title: "See results", description: "At the end of each stage you will see how many items you managed to let go of.")
             }
+            
+            
 
             Spacer()
             
             OnboardingButton()
+            
+           // OnboardingButton()
         } .background(Color.backgroundColorGrey)
+            .ignoresSafeArea()
+          
+            .padding()
+    }
     }
 }
 

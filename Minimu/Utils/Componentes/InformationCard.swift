@@ -28,7 +28,7 @@ struct InformationCard: View {
    //   .padding(.bottom, 20)
    //   .padding(.top, 20)
           
-            .shadow(radius: 4)
+            .shadow(radius: 3)
             .padding()
     }
 }

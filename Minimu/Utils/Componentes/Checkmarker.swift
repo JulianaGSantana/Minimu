@@ -8,20 +8,36 @@
 import SwiftUI
 
 struct Checkmarker: View {
+    @State var selected = false
+    
+    var goals: [String] = ["oi","tp"]
+    
     var body: some View {
         VStack{
     VStack {
                   HStack{
                       ZStack{
                           Circle()
-                              .stroke(Color.gray, lineWidth: 2)
+                              .stroke(selected ? Color("blue"): Color.red, lineWidth: 2)
                               .frame(width: 25, height: 25, alignment: .center)
+                          
+                          if selected{
+                              Image(systemName: "checkmark.circle.fill")
+                                  .font(.system(size: 25))
+                                  .foregroundColor(.blue)
+                                 
+                          }
                       } .padding()
                       
-                      Text("socorro dscndjcndjcbdscbbchsjcbxzcbzhzhxzbchzxbchxzhxbcxhzbhxbcxhzbxhbxhbxhbhxzbnnhg")
+                      Text("cdscdscdscdscd")
+                      
                   }.padding(.horizontal)
             .padding(.bottom, 20)
             .padding(.top, 20)
+          //  .contentShape(Checkmarker())
+            .onTapGesture(perform: {
+                selected.toggle()
+            })
               }
         }  .background(Color .cardColor)
             .cornerRadius(13)
