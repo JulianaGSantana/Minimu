@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Onboarding2View: View {
     var body: some View {
+        NavigationView{
         VStack{
             Spacer()
             Text("Does this spark joy?")
@@ -61,9 +62,13 @@ struct Onboarding2View: View {
 //            Text("How do I use technology and social media?")
 //                .font(.title3.bold())
 //                .frame(width: 350, alignment: .center)
+           // OnboardingButton()
             OnboardingButton()
             
-    }  .background(Color.backgroundColorGrey)
+        }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
+        
+            .padding()
+        }
 }
 }
 struct Onboarding2View_Previews: PreviewProvider {

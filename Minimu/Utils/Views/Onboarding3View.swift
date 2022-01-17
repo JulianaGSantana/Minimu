@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct Onboarding3View: View {
+    
+    @State private var selectedFrequency = "Daily"
+    let frequency = ["Daily", "Weekly"]
+    
     var body: some View {
+        NavigationView{
         VStack{
             Spacer()
             Spacer()
@@ -19,19 +24,32 @@ struct Onboarding3View: View {
                 .padding()
             
             Text("To start this journey, we will start by minimizing material items, so that we can then explore other areas.")
-                .frame(width: 350, alignment: .leading)
+             //   .frame(width: 350, alignment: .leading)
+                .padding()
             Text("Going minimalist is an ongoing process, so the need for notifications is essential. How often would you like to do this process?")
-                .frame(width: 350, alignment: .leading)
+             //   .frame(width: 350, alignment: .leading)
+                .padding()
                 
             
             List {
-                NavigationLink(destination: ProcessView()) {
+                
                 HStack{
                     Text("Frequency")
                         .foregroundColor(.primary)
+                    Section {
+                        Picker("Number", selection: $selectedFrequency) {
+                            ForEach(frequency, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(.wheel)
+                        
                 }
                     
-                }
+                    }
+                
+                
+            
                 
             }  .background(Color.backgroundColorGrey)
             Text("Event will occur every day.")
@@ -45,10 +63,11 @@ struct Onboarding3View: View {
            
             Spacer()
             OnboardingButton()
-        } .background(Color.backgroundColorGrey)
+      
+    }
+    }
     }
 }
-
 struct Onboarding3View_Previews: PreviewProvider {
     static var previews: some View {
         Onboarding3View()
