@@ -58,10 +58,10 @@ struct ProcessView: View {
                     Scroll()
                        
                        
-                    Text("Blocked")
-                        .font(.title3.bold())
-                        .padding(.leading)
-                    Scroll()
+//                    Text("Blocked")
+//                        .font(.title3.bold())
+//                        .padding(.leading)
+//                    Scroll()
             }.navigationTitle("Process")
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)

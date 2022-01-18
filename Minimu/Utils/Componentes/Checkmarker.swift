@@ -29,7 +29,7 @@ struct Checkmarker: View {
                           }
                       } .padding()
                       
-                      Text("cdscdscdscdscd")
+                      Text("cdscdscdscdscdfvdfvdfvfvfdvfdvfdvfvfffvfvfvfvfv")
                       
                   }.padding(.horizontal)
             .padding(.bottom, 20)

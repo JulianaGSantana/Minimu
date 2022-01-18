@@ -22,6 +22,7 @@ struct CardView: View {
                            Picker("Number", selection: $selectedNumber) {
                                ForEach(1...100, id: \.self) {
                                    selectedNumber in Text("\(selectedNumber)")
+                                   
                                }
                            }
                            .pickerStyle(.wheel)
