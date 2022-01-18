@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BottomSheet: View {
     var body: some View {
-        Home()
+        ProcessView()
     }
 }
 
@@ -19,39 +19,39 @@ struct BottomSheet_Previews: PreviewProvider {
     }
 }
 
-struct Home: View{
-    @State var showSheet: Bool = false
-    var body: some View{
-        NavigationView{
-            Button {
-                showSheet.toggle()
-            } label: {
-                Text("Prensent")
-            }
-            .navigationTitle("Half Modal")
-            
-            .halfSheet(showSheet: $showSheet){
-                
-                ZStack{
-                    
-                    Color.red
-                    VStack{
-                Text("Hello")
-                        
-                        Button {
-                            showSheet.toggle()
-                        } label: {
-                            Text("close")
-                        }
-                    }
-                }.ignoresSafeArea()
-                    
-            } onEnd: {
-                print("Dismissed")
-            }
-        }
-    }
-}
+//olhar aqui na hora de integrar
+//struct Home: View{
+//    @State var showSheet: Bool = false
+//    var body: some View{
+//        NavigationView{
+//            Button {
+//                showSheet.toggle()
+//            } label: {
+//                Text("Prensent")
+//            }
+//            .navigationTitle("Half Modal")
+//
+//            .halfSheet(showSheet: $showSheet){
+//   //
+//                ZStack{
+//
+//                    VStack{
+//                        CardView()
+//
+////                        Button {
+////                            showSheet.toggle()
+////                        } label: {
+////                            Text("close")
+////                        }
+//                    }
+//                }.ignoresSafeArea()
+//
+//            } onEnd: {
+//                print("Dismissed")
+//            }
+//        }
+//    }
+//}
 
 //custom half sheet modifier...
 extension View{
@@ -122,6 +122,7 @@ class CustomHostingController<Content: View>: UIHostingController<Content>{
             
             presentantionController.detents = [
                 .medium()
+                   
                 
             ]
             
