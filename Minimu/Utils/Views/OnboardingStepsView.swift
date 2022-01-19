@@ -9,12 +9,13 @@ import SwiftUI
 
 struct OnboardingStepsView: View {
 //    @Binding var OnboardingStepsViewShowing: Bool
- 
+    var onboardingStateFetcher = OnboardingStateFetcher()
+    
     var body: some View {
         TabView{
             Onboarding1View() .tag(0)
             Onboarding2View() .tag(1)
-            Onboarding3View() .tag(3)
+            Onboarding3View(onboardingStateFetcher: onboardingStateFetcher) .tag(3)
         } .tabViewStyle(.page(indexDisplayMode: .never))
     }
 }

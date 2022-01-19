@@ -22,22 +22,37 @@ struct CardView: View {
                            Picker("Number", selection: $selectedNumber) {
                                ForEach(1...100, id: \.self) {
                                    selectedNumber in Text("\(selectedNumber)")
+                                   
                                }
                            }
                            .pickerStyle(.wheel)
-                       } .frame(width: 200)
+                       } .frame(width: 100, height: 150)
                 
-                .padding()
-                .padding()
-            Text("\(selectedNumber) items")
-          //  }
+               
+          //  Text("\(selectedNumber) items")
+            Button(action: {
+        
+        //    Button(action: {self.OnboardingStepsViewShowing.toggle()
+                
+            }) {
+                Text("Done")
+              //  showOnBoarding.toggle()
+                
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .frame(width: 350, height: 60)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    .padding(.top, 20)
+                }
+            }
             
-            Spacer()
-        OnboardingButton()
+
+     
         }
         }
     }
-}
+
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {

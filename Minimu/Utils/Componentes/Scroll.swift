@@ -10,13 +10,14 @@ import SwiftUI
 struct Scroll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: [GridItem(.fixed(0))], spacing: 20) {
-                ForEach(0...4, id: \.self) { item in
+            LazyHGrid(rows: [GridItem(.fixed(0))], spacing: 25) {
+                ForEach(0...5, id: \.self) { item in
                     AchievedCard(imageName: "imageTeste", text: "oiiii")
                 }
             }
             
-        } .frame(height: 220)
+        } //.frame(height: 220)
+        .frame(width: 350, height: 220, alignment: .center)
         .ignoresSafeArea()
     }
 }
