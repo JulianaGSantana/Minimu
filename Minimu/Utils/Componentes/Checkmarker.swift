@@ -28,6 +28,13 @@ struct Checkmarker: View {
                                  
                           }
                       } .padding()
+                          .onAppear {
+                              if selected{
+                                  let currentCounter = UserDefaults().integer(forKey: "Counter")
+                                  let newCounter = currentCounter + 1
+                                  UserDefaults().set(newCounter, forKey: "Counter")
+                              }
+                          }
                       
                       Text("cdscdscdscdscdfvdfvdfvfvfdvfdvfdvfvfffvfvfvfvfv")
                       

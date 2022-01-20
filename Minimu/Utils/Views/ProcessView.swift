@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProcessView: View {
     @State var showSheetView = false
+    
 @State var showSheet: Bool = false
     var body: some View {
         NavigationView{
