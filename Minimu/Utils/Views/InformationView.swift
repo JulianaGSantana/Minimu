@@ -41,7 +41,7 @@ struct InformationView: View {
 //                }
                 
         } .navigationTitle("Minimalism")
-        .background(Color.backgroundColorGrey)
+        //.background(Color.backgroundColorGrey)
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -50,12 +50,9 @@ struct InformationView: View {
                         } label: {Image(systemName: "xmark.circle")}
                     }
                 }   .font(.system(size: 20))
-
-                                
-                
-            
-            
-        }
+        } .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading)
+                .background(Color.backgroundColorGrey)
         }
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProcessView: View {
     @State var showSheetView = false
-
+@State var showSheet: Bool = false
     var body: some View {
         NavigationView{
             ScrollView(.vertical) {
@@ -46,6 +46,15 @@ struct ProcessView: View {
 
                     Checkmarker()
                         .ignoresSafeArea()
+                        .onTapGesture {
+                            showSheet.toggle()
+                        }
+                    
+//                    Button {
+//                        showSheet.toggle()
+//                    } label: {
+//                        Text("Prensent")
+//                    }
                         
 
            Text("Achievements")
@@ -58,11 +67,26 @@ struct ProcessView: View {
                     Scroll()
                        
                        
-                    Text("Blocked")
-                        .font(.title3.bold())
-                        .padding(.leading)
-                    Scroll()
+//                    Text("Blocked")
+//                        .font(.title3.bold())
+//                        .padding(.leading)
+//                    Scroll()
             }.navigationTitle("Process")
+                
+                    .halfSheet(showSheet: $showSheet){
+           
+                        ZStack{
+                            
+                            VStack{
+                                CardView()
+                                
+                            }
+                        }.ignoresSafeArea()
+                            
+                    } onEnd: {
+                        print("Dismissed")
+                    }
+                
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .background(Color.backgroundColorGrey)

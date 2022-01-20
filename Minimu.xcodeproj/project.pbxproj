@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		141CDD012791B420003754C9 /* ClutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDD002791B420003754C9 /* ClutterView.swift */; };
 		141CDD032791B447003754C9 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDD022791B447003754C9 /* ProcessView.swift */; };
+		143985222796E4C30079CEF8 /* ListDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985212796E4C30079CEF8 /* ListDay.swift */; };
+		143985242796F45E0079CEF8 /* OnboardingStateFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */; };
+		143985262796FF820079CEF8 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985252796FF820079CEF8 /* BottomSheetView.swift */; };
 		14399E3627922D4F00D455CF /* Checkmarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E3527922D4F00D455CF /* Checkmarker.swift */; };
 		14399E382792348300D455CF /* AchievedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E372792348300D455CF /* AchievedCard.swift */; };
 		14399E3B27923F8900D455CF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14399E3A27923F8900D455CF /* ColorExtension.swift */; };
@@ -33,6 +36,9 @@
 /* Begin PBXFileReference section */
 		141CDD002791B420003754C9 /* ClutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClutterView.swift; sourceTree = "<group>"; };
 		141CDD022791B447003754C9 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		143985212796E4C30079CEF8 /* ListDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDay.swift; sourceTree = "<group>"; };
+		143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStateFetcher.swift; sourceTree = "<group>"; };
+		143985252796FF820079CEF8 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		14399E3527922D4F00D455CF /* Checkmarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmarker.swift; sourceTree = "<group>"; };
 		14399E372792348300D455CF /* AchievedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievedCard.swift; sourceTree = "<group>"; };
 		14399E3A27923F8900D455CF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 				141CDCFF2791B3E2003754C9 /* Views */,
 				141CDCFE2791B2FF003754C9 /* Componentes */,
 				14399E3927923F6900D455CF /* Extensions */,
+				143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -82,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				14399E3527922D4F00D455CF /* Checkmarker.swift */,
+				143985212796E4C30079CEF8 /* ListDay.swift */,
 				14399E4A27936F3700D455CF /* InformationCard.swift */,
 				14399E372792348300D455CF /* AchievedCard.swift */,
 				14399E3C2793286100D455CF /* Scroll.swift */,
@@ -98,10 +106,11 @@
 				141CDD002791B420003754C9 /* ClutterView.swift */,
 				144358572795ED5C00CD18B1 /* CardView.swift */,
 				14399E4827936BDB00D455CF /* InformationView.swift */,
-				144358532795A6AF00CD18B1 /* OnboardingStepsView.swift */,
+				143985252796FF820079CEF8 /* BottomSheetView.swift */,
 				14399E40279339F300D455CF /* Onboarding1View.swift */,
 				14399E4227933A4900D455CF /* Onboarding2View.swift */,
 				14399E4427933A5B00D455CF /* Onboarding3View.swift */,
+				144358532795A6AF00CD18B1 /* OnboardingStepsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 			files = (
 				141CDD012791B420003754C9 /* ClutterView.swift in Sources */,
 				144358542795A6AF00CD18B1 /* OnboardingStepsView.swift in Sources */,
+				143985262796FF820079CEF8 /* BottomSheetView.swift in Sources */,
 				14399E4B27936F3700D455CF /* InformationCard.swift in Sources */,
 				14399E4927936BDB00D455CF /* InformationView.swift in Sources */,
 				147028F0278F211A00D4A106 /* Persistence.swift in Sources */,
@@ -237,7 +247,9 @@
 				14399E4727933B1B00D455CF /* OnboardingButton.swift in Sources */,
 				14399E3627922D4F00D455CF /* Checkmarker.swift in Sources */,
 				147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */,
+				143985242796F45E0079CEF8 /* OnboardingStateFetcher.swift in Sources */,
 				147028E7278F211700D4A106 /* MinimuApp.swift in Sources */,
+				143985222796E4C30079CEF8 /* ListDay.swift in Sources */,
 				14399E3B27923F8900D455CF /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
