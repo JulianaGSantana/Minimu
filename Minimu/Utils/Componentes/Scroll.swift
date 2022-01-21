@@ -30,6 +30,7 @@ struct Scroll: View {
 //        .ignoresSafeArea()
         
         ScrollView{
+            Spacer()
             LazyVGrid(columns: layout, spacing: 40) {
                 ForEach(data, id: \.self) { item in
                 AchievedCard(imageName: "check", text: "oiiii")
