@@ -69,6 +69,7 @@ struct Onboarding3View: View {
                         .background(Color.blue)
                         .cornerRadius(15)
                         .padding(.top, 50)
+                        .padding(.bottom,30)
                     }
                 
                 //Button(action: {self.OnboardingStepsView.toggle()

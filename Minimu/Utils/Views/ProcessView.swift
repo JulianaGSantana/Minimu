@@ -47,10 +47,10 @@ struct ProcessView: View {
 
                     Checkmarker()
                         .ignoresSafeArea()
-                        .onTapGesture {
+                       .onTapGesture {
                             showSheet.toggle()
                         }
-                    
+//
 //                    Button {
 //                        showSheet.toggle()
 //                    } label: {

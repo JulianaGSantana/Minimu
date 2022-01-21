@@ -27,7 +27,9 @@ struct OnboardingButton: View {
                 .background(Color.blue)
                 .cornerRadius(15)
                 .padding(.top, 50)
+                .padding(.bottom,30)
             }
+
         }
        
     

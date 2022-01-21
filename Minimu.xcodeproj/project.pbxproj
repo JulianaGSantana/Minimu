@@ -94,8 +94,8 @@
 				14399E3527922D4F00D455CF /* Checkmarker.swift */,
 				143985212796E4C30079CEF8 /* ListDay.swift */,
 				14399E4A27936F3700D455CF /* InformationCard.swift */,
-				14399E372792348300D455CF /* AchievedCard.swift */,
 				14399E3C2793286100D455CF /* Scroll.swift */,
+				14399E372792348300D455CF /* AchievedCard.swift */,
 				14399E3E2793391200D455CF /* NewDetail.swift */,
 				14399E4627933B1B00D455CF /* OnboardingButton.swift */,
 			);
