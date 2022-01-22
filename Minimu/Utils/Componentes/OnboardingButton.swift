@@ -9,12 +9,13 @@ import SwiftUI
 
 struct OnboardingButton: View {
     //  @EnvironmentObject var viewlaunch: ViewLaunch
-    
+   
     
     var body: some View {
         
         Button(action: {
-    
+            
+          
     //    Button(action: {self.OnboardingStepsViewShowing.toggle()
             
         }) {
@@ -29,9 +30,9 @@ struct OnboardingButton: View {
                 .padding(.top, 50)
                 .padding(.bottom,30)
             }
-
+  
         }
-       
+   
     
 }
 

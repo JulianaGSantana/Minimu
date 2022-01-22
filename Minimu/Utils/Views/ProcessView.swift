@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProcessView: View {
     @State var showSheetView = false
+    var goals: Goal
     
 @State var showSheet: Bool = false
     var body: some View {
@@ -22,7 +23,7 @@ struct ProcessView: View {
                     
                     HStack{
                     
-                    Text("Material Minimalism")
+                    Text(self.goals.minType)
                         .font(.title3.bold())
                         .padding(.leading)
                         
@@ -40,12 +41,12 @@ struct ProcessView: View {
                             
                     
                 }
-                    Text("Wardrobe")
+                    Text(self.goals.typesubcategory)
                         .font(.headline)
                         .foregroundColor(Color.secondary)
                         .padding(.leading)
 
-                    Checkmarker()
+                    Checkmarker(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
                         .ignoresSafeArea()
                        .onTapGesture {
                             showSheet.toggle()
@@ -97,6 +98,6 @@ struct ProcessView: View {
 }
 struct ProcessView_Previews: PreviewProvider {
     static var previews: some View {
-        ProcessView()
+        ProcessView(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
     }
 }

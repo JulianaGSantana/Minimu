@@ -10,9 +10,12 @@ import SwiftUI
 
 struct Onboarding1View: View {
   //  @EnvironmentObject var viewlaunch: ViewLaunch
-  
+   
+
     var body: some View {
         
+       GeometryReader { geometry in
+      
         VStack {
             Spacer()
                 Text("Hi!")
@@ -35,11 +38,16 @@ struct Onboarding1View: View {
             OnboardingButton()
             
            // OnboardingButton()
-        }.padding()
-            .background(Color.backgroundColorGrey)
+       // }
+        }  .position(x: geometry.size.width/2,
+                     y: geometry.size.height/2)
+       //
+           
+           
+       }  .background(Color.backgroundColorGrey)
             .ignoresSafeArea()
-            
     }
+   
        
     }
 

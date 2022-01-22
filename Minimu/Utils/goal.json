@@ -1,0 +1,265 @@
+[
+    {
+        "id": 0,
+        "minType": "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."
+    },
+
+    {
+        "id": 1,
+        "minType": "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Unpaired socks and old, stained, torn underwear."
+    },
+    {
+        "id": 2,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Underwear that you no longer wear or that are too small (pants, skirts, shorts, etc.)."
+    },
+    
+    {
+        "id": 3,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Accessories you haven't used in a while - Glasses, watch, Earrings without pair; accessory, Oxidized jewelry."
+    },
+    
+    {
+        "id": 4,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Old, unused shoes that hurt."
+    },
+    
+    {
+        "id": 5,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Clothing for events and parties (it is often better to rent clothes for these events than to always buy something different)."
+    },
+    
+    {
+        "id": 6,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Defective or unused bags, suitcases and wallets."
+    },
+    
+    {
+        "id": 7,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Bored, stained or very old bedding that are in poor condition"
+    },
+    
+    {
+        "id": 8,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Wardrobe",
+        "frase": "Gifts you have received but do not use."
+    },
+    
+    {
+        "id": 9,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Bathroom",
+        "frase": "Expired products - Sample of products, shampoo, makeup, skincare, medicines."
+    },
+    
+    {
+        "id": 10,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Bathroom",
+        "frase": "Repeat products."
+    },
+    
+    {
+        "id": 11,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Bathroom",
+        "frase": "Packages with few products that are no longer used."
+    },
+    
+    {
+        "id": 12,
+        "minType":  "Material Minimalism",
+        "typesubcategory":"Papers and documents",
+        "frase": "Excess of documents, slips and vouchers saved that can already be thrown away or scanned, with guarantees already expired or with a deadline already fulfilled."
+    },
+    
+    {
+        "id": 13,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Papers and documents",
+        "frase": "Instruction manuals."
+    },
+    
+    {
+        "id": 14,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Papers and documents",
+        "frase": "Christmas card, store cards."
+    },
+    
+    {
+        "id": 15,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Papers and documents",
+        "frase": "Post It in excess or already used and not discarded."
+    },
+    
+    {
+        "id": 16,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Papers and documents",
+        "frase": "Notebooks that have been stored for a long time and are not being used."
+    },
+    
+    {
+        "id": 16,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "DVDs, disks, flash drives."
+    },
+    
+    {
+        "id": 18,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Pens that don't work."
+    },
+    
+    {
+        "id": 19,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Books, consider between entertainment and practical."
+    },
+    
+    {
+        "id": 20,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Unused appliances - headphones, chargers."
+    },
+    
+    {
+        "id": 21,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Decoration Items - Unused Christmas decorations."
+    },
+    
+    {
+        "id": 22,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Unused kitchen utensils, like Plastic pots without lids or lids without pots."
+    },
+    
+    {
+        "id": 23,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Excess plastic bags."
+    },
+    
+    {
+        "id": 24,
+        "minType": "Material Minimalism",
+        "typesubcategory": "Miscellaneous items",
+        "frase": "Let go of 10 small items."
+    },
+    
+    {
+        "id": 25,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Sentimental Items",
+        "frase": "photos."
+    },
+    
+    {
+        "id": 26,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Sentimental Items",
+        "frase": "clothes that remind people or childhood."
+    },
+    
+    {
+        "id": 27,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Sentimental Items",
+        "frase": "Objects remind people or moments and phases."
+    },
+    
+    {
+        "id": 28,
+        "minType":  "Material Minimalism",
+        "typesubcategory": "Sentimental Items",
+        "frase": "Old schoolbooks/papers."
+    },
+    
+    {
+        "id": 29,
+        "minType":  "Digital Minimalism",
+        "typesubcategory": "Social networks",
+        "frase": "Go to Settings > Screen Time and see how much time on the cell phone is needed? If not, rethink the amount of time and put a limit on usage on apps that you think are time consuming."
+    },
+     
+    {
+        "id": 30,
+        "minType":  "Digital Minimalism",
+        "typesubcategory": "Social networks",
+        "frase": "Clean up your email, deleting old emails, advertisements, or describing the company email channel."
+    },
+     
+    {
+        "id": 31,
+        "minType":  "Digital Minimalism",
+        "typesubcategory": "Social networks",
+        "frase": "Think about your addictions, is there a website, app or digital space that doesn't do you good? If you don't change or decrease your use."
+    },
+
+     
+    {
+        "id": 32,
+        "minType":  "Digital Minimalism",
+        "typesubcategory": "Social networks",
+        "frase": "In the main communication channel you use, delete old messages or groups that you no longer need."
+    },
+     
+    {
+        "id": 33,
+        "minType":  "Digital Minimalism",
+        "typesubcategory": "Files",
+        "frase": "View your cell phone photo album and see prints or images that are taking up space."
+    },
+     
+    {
+        "id": 34,
+        "minType":  "Digital Minimalism",
+        "typesubcategory": "Files",
+        "frase": "On your computer, see files that you no longer need and that can be saved in different places."
+    },
+     
+    {
+        "id": 35,
+        "minType":  "Mental Minimalism",
+        "typesubcategory": "Rethink",
+        "frase": "Rethink the types of information you consume in all media and ask yourself: Are the intentions good? Do they concern the process of personal evolution? We often get stuck in something that is not in our life and we waste time with these worries."
+    },
+
+    {
+        "id": 36,
+        "minType":  "Relational Minimalism",
+        "typesubcategory": "Happiness",
+        "frase": "Make a list of people who bring you happiness."
+    }
+     
+   
+    
+    
+
+]

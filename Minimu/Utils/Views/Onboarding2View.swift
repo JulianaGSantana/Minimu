@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Onboarding2View: View {
     var body: some View {
-        
+        ZStack{
+            Color.backgroundColorGrey .edgesIgnoringSafeArea(.all)
         VStack{
             Spacer()
             Text("Does this spark joy?")
@@ -53,7 +54,7 @@ struct Onboarding2View: View {
             Text("How do I use technology and social media?")
                 .font(.title3)
                 .foregroundColor(.secondary)
-                .frame(width: 350, alignment: .leading)
+                .frame(width: 300, alignment: .leading)
                 .padding()
                 .padding()
             
@@ -66,9 +67,10 @@ struct Onboarding2View: View {
            // OnboardingButton()
             OnboardingButton()
             
-        }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
-        
-            .padding()
+        } 
+        .background(Color.backgroundColorGrey) .ignoresSafeArea(.all)
+   
+        }   // .padding()
         }
 
 }
