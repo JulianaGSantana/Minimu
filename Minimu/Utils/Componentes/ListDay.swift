@@ -43,7 +43,7 @@ struct MultipleSelectionRow: View {
     var title: String
     var isSelected: Bool
     var action: () -> Void
-
+    
     var body: some View {
         Button(action: self.action) {
             HStack {

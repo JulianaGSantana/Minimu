@@ -14,35 +14,35 @@ struct ClutterView: View {
     
     var body: some View {
         ZStack {
-        GeometryReader{_ in
-            ZStack{
-//                Image("jornal") .resizable()
-//                .frame(width: 60, height: 60)
-//
-//                Image("foto")  .resizable()
-//                    .frame(width: 60, height: 60)
-//
-//                Image("fone")  .resizable()
-//                    .frame(width: 60, height: 60)
-//
-//            }
-//
-//            Image("coracao") .resizable()
-//                .frame(width: 60, height: 60)
-            ForEach(0..<26) { _ in
-                Image(image[0]).resizable()  .frame(width: 30, height: 30)
-               
+            GeometryReader{_ in
+                ZStack{
+                    //                Image("jornal") .resizable()
+                    //                .frame(width: 60, height: 60)
+                    //
+                    //                Image("foto")  .resizable()
+                    //                    .frame(width: 60, height: 60)
+                    //
+                    //                Image("fone")  .resizable()
+                    //                    .frame(width: 60, height: 60)
+                    //
+                    //            }
+                    //
+                    //            Image("coracao") .resizable()
+                    //                .frame(width: 60, height: 60)
+                    ForEach(0..<26) { _ in
+                        Image(image[0]).resizable()  .frame(width: 30, height: 30)
+                        
+                        
+                        
+                        //  .background(Color.green)
+                            .position( /// here!
+                                x: CGFloat.random(in: 0..<screenWidth),
+                                y:  CGFloat.random(in: 0..<screenHeight)
+                            )
+                    }
+                }
                 
-                  
-                  //  .background(Color.green)
-                    .position( /// here!
-                        x: CGFloat.random(in: 0..<screenWidth),
-                        y:  CGFloat.random(in: 0..<screenHeight)
-                    )
             }
-        }
-            
-        }
         }
     }
     

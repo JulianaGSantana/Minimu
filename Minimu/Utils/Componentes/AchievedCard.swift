@@ -17,32 +17,32 @@ struct AchievedCard: View {
     var body: some View {
         VStack{
             VStack{
-        VStack {
-            Image("\(achieved.imageName)")
-                .resizable()
-                    .scaledToFit()
-                    .frame(width: 69, height: 90)
-            
-           Text(achieved.title)
+                VStack {
+                    Image("\(achieved.imageName)")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 69, height: 90)
+                    
+                    Text(achieved.title)
                         .font(.title3.bold())
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+                    
+                }
+                .frame(width: 150, height: 200)
                 
-            }
-            .frame(width: 150, height: 200)
-         
-        }.background(Color .cardColor)
-          //  .shadow(radius: 4)
-            .cornerRadius(10)
-          //  .opacity(0.5) 
+            }.background(Color .cardColor)
+            //  .shadow(radius: 4)
+                .cornerRadius(10)
+            //  .opacity(0.5) 
         } .shadow(radius: 4)
         
-     
-       
-    }
-   
+        
         
     }
+    
+    
+}
 
 
 

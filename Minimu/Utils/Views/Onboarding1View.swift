@@ -9,20 +9,20 @@ import Combine
 import SwiftUI
 
 struct Onboarding1View: View {
-  //  @EnvironmentObject var viewlaunch: ViewLaunch
-   
-
+    //  @EnvironmentObject var viewlaunch: ViewLaunch
+    
+    
     var body: some View {
         
-       GeometryReader { geometry in
-      
-        VStack {
-            Spacer()
+        GeometryReader { geometry in
+            
+            VStack {
+                Spacer()
                 Text("Hi!")
                     .fontWeight(.heavy)
                     .font(.system(size: 35))
                     .frame(width: 300, alignment: .center)
-        
+                
                 
                 VStack(alignment: .leading) {
                     NewDetail(image: "jornal", title: "Understand minimalism", description: "Being minimalist is a process of reflection.")
@@ -30,26 +30,26 @@ struct Onboarding1View: View {
                     NewDetail(image: "mensagem", title: "Receive notifications", description: "So you never forget to meet the goals  on the chosen days.")
                     NewDetail(image: "caixa", title: "See results", description: "At the end of each stage you will see how many items you managed to let go of.")
                 }
+                
+                
+                
+                Spacer()
+                
+                OnboardingButton()
+                
+                // OnboardingButton()
+                // }
+            }  .position(x: geometry.size.width/2,
+                         y: geometry.size.height/2)
+            //
             
-           
-
-            Spacer()
             
-            OnboardingButton()
-            
-           // OnboardingButton()
-       // }
-        }  .position(x: geometry.size.width/2,
-                     y: geometry.size.height/2)
-       //
-           
-           
-       }  .background(Color.backgroundColorGrey)
+        }  .background(Color.backgroundColorGrey)
             .ignoresSafeArea()
     }
-   
-       
-    }
+    
+    
+}
 
 
 

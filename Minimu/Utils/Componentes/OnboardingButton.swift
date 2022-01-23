@@ -9,18 +9,18 @@ import SwiftUI
 
 struct OnboardingButton: View {
     //  @EnvironmentObject var viewlaunch: ViewLaunch
-   
+    
     
     var body: some View {
         
         Button(action: {
             
-          
-    //    Button(action: {self.OnboardingStepsViewShowing.toggle()
+            
+            //    Button(action: {self.OnboardingStepsViewShowing.toggle()
             
         }) {
             Text("Continue")
-          //  showOnBoarding.toggle()
+            //  showOnBoarding.toggle()
             
                 .foregroundColor(.white)
                 .font(.headline)
@@ -29,10 +29,10 @@ struct OnboardingButton: View {
                 .cornerRadius(15)
                 .padding(.top, 50)
                 .padding(.bottom,30)
-            }
-  
         }
-   
+        
+    }
+    
     
 }
 

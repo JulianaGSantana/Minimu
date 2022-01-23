@@ -62,7 +62,7 @@ extension View{
             .background(
                 HalfSheetHelper(sheetView: sheetView(), showSheet: showSheet, onEnd: onEnd)
             )
-}
+    }
 }
 
 struct HalfSheetHelper<SheetView: View>: UIViewControllerRepresentable{
@@ -92,9 +92,9 @@ struct HalfSheetHelper<SheetView: View>: UIViewControllerRepresentable{
             
         } else {
             uiViewController.dismiss(animated: true)
-                }
-            }
-        
+        }
+    }
+    
     
     
     class Coordinator: NSObject, UISheetPresentationControllerDelegate{
@@ -122,7 +122,7 @@ class CustomHostingController<Content: View>: UIHostingController<Content>{
             
             presentantionController.detents = [
                 .medium()
-                   
+                
                 
             ]
             

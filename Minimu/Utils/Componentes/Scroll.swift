@@ -15,8 +15,8 @@ struct Achieved {
 
 
 struct Scroll: View {
-  //  let data = Array(1...5).map {"\($0)"}
- 
+    //  let data = Array(1...5).map {"\($0)"}
+    
     let achieveds : [Achieved] = [
         Achieved(id: 0, title: "cndscjdsj", imageName: "check"),
         Achieved(id: 1, title: "cccdj", imageName: "computador"),
@@ -39,7 +39,7 @@ struct Scroll: View {
     ]
     
     @State var blocked: Bool = false
-   
+    
     
     var body: some View {
         
@@ -49,10 +49,10 @@ struct Scroll: View {
             LazyVGrid(columns: layout, spacing: 40) {
                 ForEach(achieveds, id: \.id) { achieved in
                     AchievedCard(achieved: achieved)
-    
+                    
                 }
             }
-        
+            
             
         }
         
