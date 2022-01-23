@@ -44,39 +44,55 @@ struct Home : View {
 
 struct CustomAlertView: View {
     @Binding var show: Bool
+    @State var isProfileTapped: Bool = false
+    @State private var isButtonPressed: Bool = false
     var body: some View {
         NavigationView{
             ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
                 VStack(spacing: 25){
+                    
+                    Text("You already let go of 100 things!")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
+                     
+                    
                     Image("caixa")
                         .resizable()
                         .frame(width: 60, height: 60)
                     
-                    Text("Congratulations")
-                        .font(.title)
-                        .foregroundColor(.pink)
+                 
+                    
+                    //    .lineLimit(1)
+                    Divider()
                     
                     Button(action: {
-                        //    NavigationLink("Archieved", destination: Scroll())
+                        ProcessView(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
                         
-                    }){
-                        Text("Bach To Home")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                            .padding(.vertical,10)
-                            .padding(.horizontal,25)
-                            .background(Color.purple)
+                               })
+                  { //label acho
+                        Text("Yeah!")
+                            .foregroundColor(.blue)
+                         //   .fontWeight(.bold)
+                          //  .padding(.vertical,10)
+                            //    .padding(.horizontal,25)
+                       
                         // .clipShape(Capsule())
-                            .cornerRadius(10)
+                            
                     }
-                } .padding(.vertical,25)
-                    .padding(.horizontal,30)
+                    
+                    //VStack
+                }.padding(.vertical,25)
+                  //  .padding()
+                   // .padding(.horizontal,30)
                 //   .background(BlurView())
-                    .background(.ultraThinMaterial)
+                    .background(.regularMaterial)
                     .cornerRadius(25)
-                    .padding()
+                    .padding(.leading, 60)
+                    .padding(.trailing, 60)
             } .frame(maxWidth: .infinity, maxHeight: .infinity )
                 .background(Color.primary.opacity(0.35))
+              
                 .onTapGesture {
                     withAnimation{
                         show.toggle()

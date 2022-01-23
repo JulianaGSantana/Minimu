@@ -10,8 +10,6 @@ import SwiftUI
 
 struct Onboarding1View: View {
     //  @EnvironmentObject var viewlaunch: ViewLaunch
-    
-    
     var body: some View {
         
         GeometryReader { geometry in
@@ -30,9 +28,6 @@ struct Onboarding1View: View {
                     NewDetail(image: "mensagem", title: "Receive notifications", description: "So you never forget to meet the goals  on the chosen days.")
                     NewDetail(image: "caixa", title: "See results", description: "At the end of each stage you will see how many items you managed to let go of.")
                 }
-                
-                
-                
                 Spacer()
                 
                 OnboardingButton()
@@ -47,12 +42,7 @@ struct Onboarding1View: View {
         }  .background(Color.backgroundColorGrey)
             .ignoresSafeArea()
     }
-    
-    
 }
-
-
-
 struct Onboarding1View_Previews: PreviewProvider {
     static var previews: some View {
         Onboarding1View()

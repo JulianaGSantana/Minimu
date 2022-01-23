@@ -13,7 +13,6 @@ struct Onboarding3View: View {
     
     
     var body: some View {
-        
         VStack{
             //       Spacer()
             Spacer()
@@ -64,11 +63,7 @@ struct Onboarding3View: View {
             //  })
             
         }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
-        
-        
-        
     }
-    
     func changeOnboardingState() {
         self.onboardingStateFetcher.changingOnboardingState()
     }

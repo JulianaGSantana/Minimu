@@ -24,11 +24,8 @@ struct Checkmarker: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .font(.system(size: 25))
                                 .foregroundColor(.blue)
-                            
-                            
                         }
-                    } .padding()
-                    
+                    } .padding()  
                     // Text("Look for socks without pair, ")
                     Text(self.goals.frase)
                     

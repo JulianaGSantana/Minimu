@@ -19,40 +19,6 @@ struct BottomSheet_Previews: PreviewProvider {
     }
 }
 
-//olhar aqui na hora de integrar
-//struct Home: View{
-//    @State var showSheet: Bool = false
-//    var body: some View{
-//        NavigationView{
-//            Button {
-//                showSheet.toggle()
-//            } label: {
-//                Text("Prensent")
-//            }
-//            .navigationTitle("Half Modal")
-//
-//            .halfSheet(showSheet: $showSheet){
-//   //
-//                ZStack{
-//
-//                    VStack{
-//                        CardView()
-//
-////                        Button {
-////                            showSheet.toggle()
-////                        } label: {
-////                            Text("close")
-////                        }
-//                    }
-//                }.ignoresSafeArea()
-//
-//            } onEnd: {
-//                print("Dismissed")
-//            }
-//        }
-//    }
-//}
-
 //custom half sheet modifier...
 extension View{
     func halfSheet<SheetView: View>(showSheet: Binding<Bool>, @ViewBuilder
@@ -130,3 +96,38 @@ class CustomHostingController<Content: View>: UIHostingController<Content>{
         }
     }
 }
+
+
+//olhar aqui na hora de integrar
+//struct Home: View{
+//    @State var showSheet: Bool = false
+//    var body: some View{
+//        NavigationView{
+//            Button {
+//                showSheet.toggle()
+//            } label: {
+//                Text("Prensent")
+//            }
+//            .navigationTitle("Half Modal")
+//
+//            .halfSheet(showSheet: $showSheet){
+//   //
+//                ZStack{
+//
+//                    VStack{
+//                        CardView()
+//
+////                        Button {
+////                            showSheet.toggle()
+////                        } label: {
+////                            Text("close")
+////                        }
+//                    }
+//                }.ignoresSafeArea()
+//
+//            } onEnd: {
+//                print("Dismissed")
+//            }
+//        }
+//    }
+//}

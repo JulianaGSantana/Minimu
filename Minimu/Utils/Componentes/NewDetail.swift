@@ -34,11 +34,9 @@ struct NewDetail: View {
                     
                 }
             }.frame(width: 340, height: 100)
-        }
-        
+        } 
     }
 }
-
 
 struct NewDetail_Previews: PreviewProvider {
     static var previews: some View {

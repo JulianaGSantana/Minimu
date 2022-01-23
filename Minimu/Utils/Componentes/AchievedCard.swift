@@ -25,9 +25,8 @@ struct AchievedCard: View {
                     
                     Text(achieved.title)
                         .font(.title3.bold())
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                    
+                      //  .font(.subheadline)
+                        .foregroundColor(.secondary)   
                 }
                 .frame(width: 150, height: 200)
                 
@@ -36,17 +35,8 @@ struct AchievedCard: View {
                 .cornerRadius(10)
             //  .opacity(0.5) 
         } .shadow(radius: 4)
-        
-        
-        
     }
-    
-    
 }
-
-
-
-
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {

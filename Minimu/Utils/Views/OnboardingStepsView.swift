@@ -22,9 +22,6 @@ struct OnboardingStepsView: View {
     
     
 }
-
-
-
 struct OnboardingStepsView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingStepsView()

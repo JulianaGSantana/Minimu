@@ -44,18 +44,13 @@ struct CardView: View {
                         .padding(.top, 20)
                 }
             }
-            
-            
-            
         }
     }
     func updateCounter() {
         let currentCounter = UserDefaults().integer(forKey: "Counter")
         let newCounter = currentCounter + 1
-        UserDefaults().set(newCounter, forKey: "Counter")
-        
+        UserDefaults().set(newCounter, forKey: "Counter")      
     }
-    
 }
 
 

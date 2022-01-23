@@ -12,8 +12,6 @@ struct Achieved {
     let title: String
     let imageName: String
 }
-
-
 struct Scroll: View {
     //  let data = Array(1...5).map {"\($0)"}
     
@@ -39,11 +37,8 @@ struct Scroll: View {
     ]
     
     @State var blocked: Bool = false
-    
-    
+
     var body: some View {
-        
-        
         ScrollView{
             Spacer()
             LazyVGrid(columns: layout, spacing: 40) {
@@ -52,8 +47,6 @@ struct Scroll: View {
                     
                 }
             }
-            
-            
         }
         
         if blocked{

@@ -10,8 +10,7 @@ import SwiftUI
 struct ListDay: View {
     @State var items: [String] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"]
     @State var selections: [String] = []
-    
-    
+
     var body: some View {
         List {
             ForEach(self.items, id: \.self) { item in
@@ -27,18 +26,12 @@ struct ListDay: View {
         }
     }
 }
-
-
-
-
-
 struct ListDay_Previews: PreviewProvider {
     static var previews: some View {
         ListDay()
     }
     
 }
-
 struct MultipleSelectionRow: View {
     var title: String
     var isSelected: Bool
