@@ -31,6 +31,7 @@ struct Checkmarker: View {
                       
                   // Text("Look for socks without pair, ")
                       Text(self.goals.frase)
+                      
                   }.padding(.horizontal)
             .padding(.bottom, 20)
             .padding(.top, 20)
@@ -48,7 +49,7 @@ struct Checkmarker: View {
 }
 struct Checkmarker_Previews: PreviewProvider {
     static var previews: some View {
-        Checkmarker( goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
+        Checkmarker(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
 }
 }
 

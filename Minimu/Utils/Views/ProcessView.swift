@@ -11,6 +11,7 @@ struct ProcessView: View {
     @State var showSheetView = false
     var goals: Goal
     
+    
 @State var showSheet: Bool = false
     var body: some View {
         NavigationView{
@@ -57,6 +58,8 @@ struct ProcessView: View {
 //                    } label: {
 //                        Text("Prensent")
 //                    }
+                    
+                    
                         
 
            Text("Achievements")

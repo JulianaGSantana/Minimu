@@ -13,6 +13,7 @@ struct Onboarding3View: View {
     
     
     var body: some View {
+        
         VStack{
             //       Spacer()
             Spacer()

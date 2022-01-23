@@ -7,35 +7,57 @@
 
 import SwiftUI
 
+struct Achieved {
+    var id: Int
+    let title: String
+    let imageName: String
+}
+
+
 struct Scroll: View {
-    let data = Array(1...5).map {"\($0)"}
+  //  let data = Array(1...5).map {"\($0)"}
+ 
+    let achieveds : [Achieved] = [
+        Achieved(id: 0, title: "cndscjdsj", imageName: "check"),
+        Achieved(id: 1, title: "cccdj", imageName: "computador"),
+        Achieved(id: 2, title: "cdscjdsj", imageName: "cueca"),
+        Achieved(id: 3, title: "cndj", imageName: "coracao"),
+        Achieved(id: 4, title: "cdscjdsj", imageName: "cueca"),
+        Achieved(id: 5, title: "cdscjdsj", imageName: "cueca"),
+        Achieved(id: 6, title: "cndscjdsj", imageName: "check"),
+        Achieved(id: 7, title: "cccdj", imageName: "computador"),
+        Achieved(id: 8, title: "cdscjdsj", imageName: "cueca"),
+        Achieved(id: 9, title: "cndj", imageName: "coracao"),
+        Achieved(id: 10, title: "cdscjdsj", imageName: "cueca"),
+        Achieved(id: 11, title: "cdscjdsj", imageName: "cueca"),
+        Achieved(id: 12, title: "cdscjdsj", imageName: "cueca"),
+    ]
+    
     let layout = [
         GridItem(.flexible()),
         GridItem(.flexible()),
     ]
     
+    @State var blocked: Bool = false
+   
+    
     var body: some View {
-      
-//        ScrollView(.horizontal, showsIndicators: false) {
-//
-//            LazyHGrid(rows: [GridItem(.fixed(0))], spacing: 25) {
-//                ForEach(0...5, id: \.self) { item in
-//                    AchievedCard(imageName: "checkMark", text: "oiiii")
-//
-//                }
-//            }
-//
-//        } //.frame(height: 220)
-//        .frame(width: 350, height: 220, alignment: .center)
-//        .ignoresSafeArea()
+        
         
         ScrollView{
             Spacer()
             LazyVGrid(columns: layout, spacing: 40) {
-                ForEach(data, id: \.self) { item in
-                AchievedCard(imageName: "check", text: "oiiii")
+                ForEach(achieveds, id: \.id) { achieved in
+                    AchievedCard(achieved: achieved)
+    
                 }
             }
+        
+            
+        }
+        
+        if blocked{
+            AchievedCard(achieved: Achieved(id: 2, title: "teste", imageName: "cueca")).opacity(0.9)
         }
     }
 }
@@ -45,3 +67,4 @@ struct Scroll_Previews: PreviewProvider {
         Scroll()
     }
 }
+

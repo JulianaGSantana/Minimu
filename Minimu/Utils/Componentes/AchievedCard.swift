@@ -7,21 +7,24 @@
 
 import SwiftUI
 
+
+
 struct AchievedCard: View {
-    var imageName: String
-    var text: String
+    
+    let achieved : Achieved
+    @State var blocked: Bool = false
+    
     var body: some View {
         VStack{
             VStack{
         VStack {
-                Image(imageName)
-                    .resizable()
+            Image("\(achieved.imageName)")
+                .resizable()
                     .scaledToFit()
                     .frame(width: 69, height: 90)
             
-                    Text(text)
+           Text(achieved.title)
                         .font(.title3.bold())
-                    Text("oi")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 
@@ -31,8 +34,13 @@ struct AchievedCard: View {
         }.background(Color .cardColor)
           //  .shadow(radius: 4)
             .cornerRadius(10)
+          //  .opacity(0.5) 
         } .shadow(radius: 4)
+        
+     
+       
     }
+   
         
     }
 
@@ -42,6 +50,6 @@ struct AchievedCard: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievedCard(imageName: "imageTeste", text: "Teste")
+        AchievedCard(achieved: Achieved(id: 0, title: "hola", imageName: "caixa"))
     }
 }
