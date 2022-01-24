@@ -8,9 +8,10 @@ import SwiftUI
 
 struct Checkmarker: View {
     @State var selected = false
+    @State var showSheet: Bool = false
     
     var goals: Goal
-    
+
     var body: some View {
         VStack{
             VStack {
@@ -20,11 +21,13 @@ struct Checkmarker: View {
                             .stroke(selected ? Color("blue"): Color.red, lineWidth: 2)
                             .frame(width: 25, height: 25, alignment: .center)
                         
-                        if selected{
+                        if selected {
                             Image(systemName: "checkmark.circle.fill")
                                 .font(.system(size: 25))
                                 .foregroundColor(.blue)
+                      //     showSheet.toggle()
                         }
+                        
                     } .padding()  
                     // Text("Look for socks without pair, ")
                     Text(self.goals.frase)
@@ -42,13 +45,28 @@ struct Checkmarker: View {
         
             .shadow(radius: 4)
             .padding()
+        
+//            .halfSheet(showSheet: $showSheet){
+//               
+//                                       ZStack{
+//               
+//                                           VStack{
+//                                               CardView()
+//               
+//                                           }
+//                                       }.ignoresSafeArea()
+//               
+//                                   } onEnd: {
+//                                       print("Dismissed")
+//                                   }
+
     }
 }
-struct Checkmarker_Previews: PreviewProvider {
-    static var previews: some View {
-        Checkmarker(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
-    }
-}
+//struct Checkmarker_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Checkmarker(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
+//    }
+//}
 
 
 //depois de .padding(.top,20)

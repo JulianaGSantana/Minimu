@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ProcessView: View {
     @State var showSheetView = false
-    var goals: Goal
-    
+    @StateObject var modalData = ModalData()
+    @StateObject var counterFetcher = CounterFetcher()
     
     @State var showSheet: Bool = false
     var body: some View {
@@ -23,8 +23,8 @@ struct ProcessView: View {
                         .padding(.leading)
                     
                     HStack{
-                        
-                        Text(self.goals.minType)
+              
+                        Text(modalData.goals[counterFetcher.counter].minType)
                             .font(.title3.bold())
                             .padding(.leading)
                         
@@ -42,26 +42,17 @@ struct ProcessView: View {
                         
                         
                     }
-                    Text(self.goals.typesubcategory)
+                    Text(modalData.goals[counterFetcher.counter].typesubcategory)
                         .font(.headline)
                         .foregroundColor(Color.secondary)
                         .padding(.leading)
                     
-                    Checkmarker(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
+                    Checkmarker(goals: modalData.goals[counterFetcher.counter])
                         .ignoresSafeArea()
                         .onTapGesture {
                             showSheet.toggle()
                         }
-                    //
-                    //                    Button {
-                    //                        showSheet.toggle()
-                    //                    } label: {
-                    //                        Text("Prensent")
-                    //                    }
-                    
-                    
-                    
-                    
+    
                     Text("Achievements")
                         .font(.title.bold())
                         .padding(.leading)
@@ -83,7 +74,7 @@ struct ProcessView: View {
                         ZStack{
                             
                             VStack{
-                                CardView()
+                                CardView(counterFetcher: counterFetcher)
                                 
                             }
                         }.ignoresSafeArea()
@@ -101,6 +92,6 @@ struct ProcessView: View {
 }
 struct ProcessView_Previews: PreviewProvider {
     static var previews: some View {
-        ProcessView(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
+        ProcessView()
     }
 }

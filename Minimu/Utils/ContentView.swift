@@ -16,14 +16,14 @@ struct ContentView: View {
     
     var body: some View {
         if onboardingStateFetcher.onboardingState == true {
-            
+           
             TabView {
                 ClutterView()
                     .tabItem {
                     Image(systemName: "house")
                     Text("Clutter")
                     }
-                ProcessView(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
+                ProcessView()
                     .tabItem {
                     Image(systemName: "house")
                     Text("Process")

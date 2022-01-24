@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     @State private var selectedNumber = "5"
-    
+    var counterFetcher : CounterFetcher
     var body: some View {
         NavigationView {
             VStack{
@@ -32,6 +32,9 @@ struct CardView: View {
                 //  Text("\(selectedNumber) items")
                 Button(action: {
                     updateCounter()
+                        //adicionar dismiss nesse botão
+                    //Como linkar o Array de Strings com o contador?
+                    //ajustar essa view com o checkmark
                 }) {
                     Text("Done")
                     //  showOnBoarding.toggle()
@@ -48,14 +51,16 @@ struct CardView: View {
     }
     func updateCounter() {
         let currentCounter = UserDefaults().integer(forKey: "Counter")
+        
         let newCounter = currentCounter + 1
-        UserDefaults().set(newCounter, forKey: "Counter")      
+       // UserDefaults().set(newCounter, forKey: "Counter")
+        counterFetcher.saveCounterToUserDefault(newCounter)
     }
 }
 
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView()
-    }
-}
+//struct CardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CardView()
+//    }
+//}

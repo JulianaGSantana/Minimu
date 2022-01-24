@@ -63,6 +63,7 @@ struct Onboarding3View: View {
             //  })
             
         }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
+           
     }
     func changeOnboardingState() {
         self.onboardingStateFetcher.changingOnboardingState()

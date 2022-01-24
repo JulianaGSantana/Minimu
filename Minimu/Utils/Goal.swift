@@ -11,5 +11,4 @@ struct Goal: Codable, Identifiable, Hashable {
     var minType: String
     var typesubcategory: String
     var frase: String
-
 }

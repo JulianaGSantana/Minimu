@@ -7,7 +7,7 @@
 
 import Foundation
 class CounterFetcher: ObservableObject {
-    @Published var counter : Int?
+    @Published var counter : Int = 0
     init(){
         if UserDefaults().bool(forKey: "Counter") {
             counter = UserDefaults().integer(forKey: "Counter")
@@ -17,5 +17,6 @@ class CounterFetcher: ObservableObject {
     
     internal func saveCounterToUserDefault(_ newCounter: Int) {
         UserDefaults().set(newCounter, forKey: "Counter")
+        counter = newCounter
     }
 }

@@ -23,8 +23,10 @@ struct Alert_Previews: PreviewProvider {
 struct Home : View {
     @State var customAlert = false
     @State private var isButtonPressed: Bool = false
+    @State private var showingDetail = false
     var body: some View{
         ZStack{
+       
             VStack{
                 Button(action: {
                     withAnimation{
@@ -32,17 +34,22 @@ struct Home : View {
                     }
                 }) {
                     Text("Custom AlertView!")
-                }
+                } 
                 
             }
             if customAlert{
                 CustomAlertView(show: $customAlert)
             }
+            
+        
         }  .edgesIgnoringSafeArea(.all)
+        
     }
 }
 
 struct CustomAlertView: View {
+
+
     @Binding var show: Bool
     @State var isProfileTapped: Bool = false
     @State private var isButtonPressed: Bool = false
@@ -62,26 +69,15 @@ struct CustomAlertView: View {
                         .frame(width: 60, height: 60)
                     
                  
-                    
-                    //    .lineLimit(1)
                     Divider()
                     
-                    Button(action: {
-                        ProcessView(goals: Goal(id: 0, minType: "Material Minimalism", typesubcategory: "String", frase: "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.))."))
-                        
-                               })
-                  { //label acho
-                        Text("Yeah!")
-                            .foregroundColor(.blue)
-                         //   .fontWeight(.bold)
-                          //  .padding(.vertical,10)
-                            //    .padding(.horizontal,25)
-                       
-                        // .clipShape(Capsule())
-                            
-                    }
+                  //  NavigationLink(destination: Home()) {
+                                  //      Text("Yeah!!")
+                                    
+                Button("Yeah!") {
+                          
+                        }
                     
-                    //VStack
                 }.padding(.vertical,25)
                   //  .padding()
                    // .padding(.horizontal,30)
@@ -98,6 +94,10 @@ struct CustomAlertView: View {
                         show.toggle()
                     }
                 }
+            
+            
         }
+        
     }
 }
+

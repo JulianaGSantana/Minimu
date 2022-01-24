@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct Onboarding2View: View {
+    @State private var isPresenting = false
     var body: some View {
+       
         ZStack{
-            Color.backgroundColorGrey .edgesIgnoringSafeArea(.all)
+          //  Color.backgroundColorGrey .edgesIgnoringSafeArea(.all)
             VStack{
                 Spacer()
                 Text("Does this spark joy?")
@@ -60,15 +62,27 @@ struct Onboarding2View: View {
                 
                 Spacer()
                 
-                
-                //            Text("How do I use technology and social media?")
-                //                .font(.title3.bold())
-                //                .frame(width: 350, alignment: .center)
-                // OnboardingButton()
-                OnboardingButton()
+//                NavigationLink(destination: Onboarding3View(), isActive: $isPresenting){ EmptyView()}
+//                
+                Button(action: {
+                    isPresenting = true
+                }) {
+                    Text("Continue")
+                    //  showOnBoarding.toggle()
+                    
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .frame(width: 350, height: 60)
+                        .background(Color.blue)
+                        .cornerRadius(15)
+                        .padding(.top, 50)
+                        .padding(.bottom,30)
+                }
                 
             } 
             .background(Color.backgroundColorGrey) .ignoresSafeArea(.all)
+    //     .navigationBarHidden(true)
+           //     .navigationBarBackButtonHidden(true)
             
         }   // .padding()
     }

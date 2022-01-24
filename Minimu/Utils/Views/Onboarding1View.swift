@@ -9,9 +9,9 @@ import Combine
 import SwiftUI
 
 struct Onboarding1View: View {
-    //  @EnvironmentObject var viewlaunch: ViewLaunch
+    @State private var isPresenting = false
     var body: some View {
-        
+      //  NavigationView{
         GeometryReader { geometry in
             
             VStack {
@@ -30,17 +30,34 @@ struct Onboarding1View: View {
                 }
                 Spacer()
                 
-                OnboardingButton()
+                NavigationLink(destination: Onboarding2View(), isActive: $isPresenting){ EmptyView()}
                 
-                // OnboardingButton()
-                // }
+                Button(action: {
+                    isPresenting = true
+                }) {
+                    Text("Continue")
+                    //  showOnBoarding.toggle()
+                    
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .frame(width: 350, height: 60)
+                        .background(Color.blue)
+                        .cornerRadius(15)
+                        .padding(.top, 50)
+                        .padding(.bottom,30)
+                }
+
+        
             }  .position(x: geometry.size.width/2,
                          y: geometry.size.height/2)
-            //
             
-            
+          
+        
         }  .background(Color.backgroundColorGrey)
             .ignoresSafeArea()
+      //  } .navigationBarHidden(true)
+        
+      
     }
 }
 struct Onboarding1View_Previews: PreviewProvider {
