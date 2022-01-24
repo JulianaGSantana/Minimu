@@ -13,6 +13,7 @@ struct Onboarding3View: View {
     
     
     var body: some View {
+       // ScrollView{
         VStack{
             //       Spacer()
             Spacer()
@@ -61,8 +62,9 @@ struct Onboarding3View: View {
             //Button(action: {self.OnboardingStepsView.toggle()
             
             //  })
-            
+        
         }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
+        //     }
            
     }
     func changeOnboardingState() {

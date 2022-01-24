@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct Achieved {
     var id: Int
     let title: String
@@ -36,8 +37,9 @@ struct Scroll: View {
         GridItem(.flexible()),
     ]
     
-    @State var blocked: Bool = false
-
+  //  @State var blocked: Bool = false
+    
+ //   var counterFetcher : CounterFetcher
     var body: some View {
         ScrollView{
             Spacer()
@@ -45,19 +47,22 @@ struct Scroll: View {
                 ForEach(achieveds, id: \.id) { achieved in
                     AchievedCard(achieved: achieved)
                     
-                }
+                } .opacity(0.9)
             }
         }
         
-        if blocked{
-            AchievedCard(achieved: Achieved(id: 2, title: "teste", imageName: "cueca")).opacity(0.9)
-        }
+//        if counterFetche.self == 3 {
+//           AchievedCard(achieved: Achieved(id: 2, title: "teste", imageName: "cueca")).opacity(0.9)
+//        }
     }
 }
 
-struct Scroll_Previews: PreviewProvider {
-    static var previews: some View {
-        Scroll()
-    }
-}
+//struct Scroll_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Scroll()
+//    }
+//}
+//if counterFetcher == 3 {
+//
+//}
 

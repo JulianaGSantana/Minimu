@@ -12,6 +12,7 @@ struct ProcessView: View {
     @StateObject var modalData = ModalData()
     @StateObject var counterFetcher = CounterFetcher()
     
+    
     @State var showSheet: Bool = false
     var body: some View {
         NavigationView{
@@ -48,6 +49,7 @@ struct ProcessView: View {
                         .padding(.leading)
                     
                     Checkmarker(goals: modalData.goals[counterFetcher.counter])
+                    
                         .ignoresSafeArea()
                         .onTapGesture {
                             showSheet.toggle()

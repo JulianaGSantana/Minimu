@@ -17,16 +17,16 @@ struct Checkmarker: View {
             VStack {
                 HStack{
                     ZStack{
-                        Circle()
-                            .stroke(selected ? Color("blue"): Color.red, lineWidth: 2)
-                            .frame(width: 25, height: 25, alignment: .center)
+//                        Circle()
+//                            .stroke(selected ? Color("blue"): Color.red, lineWidth: 2)
+//                            .frame(width: 25, height: 25, alignment: .center)
                         
-                        if selected {
-                            Image(systemName: "checkmark.circle.fill")
-                                .font(.system(size: 25))
-                                .foregroundColor(.blue)
+//                        if selected {
+//                            Image(systemName: "checkmark.circle.fill")
+//                                .font(.system(size: 25))
+//                                .foregroundColor(.blue)
                       //     showSheet.toggle()
-                        }
+                //        }
                         
                     } .padding()  
                     // Text("Look for socks without pair, ")
@@ -36,9 +36,9 @@ struct Checkmarker: View {
                     .padding(.bottom, 20)
                     .padding(.top, 20)
                 //  .contentShape(Checkmarker())
-                    .onTapGesture(perform: {
-                        selected.toggle()
-                    })
+//                    .onTapGesture(perform: {
+//                        selected.toggle()
+//                    })
             }
         }  .background(Color .cardColor)
             .cornerRadius(13)
