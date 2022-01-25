@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Onboarding1View: View {
     @State private var isPresenting = false
+  //  @Environment(\.presentationMode) var presentationMode
     var body: some View {
       //  NavigationView{
         GeometryReader { geometry in
@@ -30,22 +31,22 @@ struct Onboarding1View: View {
                 }
                 Spacer()
                 
-                NavigationLink(destination: Onboarding2View(), isActive: $isPresenting){ EmptyView()}
-                
-                Button(action: {
-                    isPresenting = true
-                }) {
-                    Text("Continue")
-                    //  showOnBoarding.toggle()
-                    
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .frame(width: 350, height: 60)
-                        .background(Color.blue)
-                        .cornerRadius(15)
-                        .padding(.top, 50)
-                        .padding(.bottom,30)
-                }
+//                NavigationLink(destination: Onboarding2View(), isActive: $isPresenting){ EmptyView()}
+//
+//                Button(action: {
+//                    isPresenting = true
+//                }) {
+//                    Text("Continue")
+//                    //  showOnBoarding.toggle()
+//                    
+//                        .foregroundColor(.white)
+//                        .font(.headline)
+//                        .frame(width: 350, height: 60)
+//                        .background(Color.blue)
+//                        .cornerRadius(15)
+//                        .padding(.top, 50)
+//                        .padding(.bottom,30)
+//                }
 
         
             }  .position(x: geometry.size.width/2,

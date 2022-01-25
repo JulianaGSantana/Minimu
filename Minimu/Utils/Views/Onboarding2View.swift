@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct Onboarding2View: View {
-    @State private var isPresenting = false
+  @State private var isPresenting = false
+//    @Binding var showSheetView: Bool
+ //   @Environment(\.presentationMode) var presentationMode
     var body: some View {
-       
         ZStack{
           //  Color.backgroundColorGrey .edgesIgnoringSafeArea(.all)
             VStack{
@@ -21,6 +22,7 @@ struct Onboarding2View: View {
                     .frame(width: 350, alignment: .leading)
                     .padding()
                     .padding()
+                    .padding(.leading,30)
                 
                 
                 Text("Are you always running out of money?")
@@ -28,6 +30,7 @@ struct Onboarding2View: View {
                     .frame(width: 350, alignment: .trailing)
                     .padding()
                     .padding()
+                    .padding(.trailing,30)
                 
                 
                 Text("Does this item add value to my life?")
@@ -36,6 +39,7 @@ struct Onboarding2View: View {
                     .frame(width: 350, alignment: .leading)
                     .padding()
                     .padding()
+                    .padding(.leading,30)
                 
                 
                 Text("Minimalism is about thinking and not just getting rid of items")
@@ -52,6 +56,7 @@ struct Onboarding2View: View {
                     .frame(width: 350, alignment: .trailing)
                     .padding()
                     .padding()
+                    .padding(.trailing,30)
                 
                 Text("How do I use technology and social media?")
                     .font(.title3)
@@ -62,22 +67,22 @@ struct Onboarding2View: View {
                 
                 Spacer()
                 
-//                NavigationLink(destination: Onboarding3View(), isActive: $isPresenting){ EmptyView()}
-//                
-                Button(action: {
-                    isPresenting = true
-                }) {
-                    Text("Continue")
-                    //  showOnBoarding.toggle()
-                    
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .frame(width: 350, height: 60)
-                        .background(Color.blue)
-                        .cornerRadius(15)
-                        .padding(.top, 50)
-                        .padding(.bottom,30)
-                }
+                NavigationLink(destination: Onboarding3View(), isActive: $isPresenting){ EmptyView()}
+                
+//                Button(action: {
+//                    isPresenting = true
+//                }) {
+//                    Text("Continue")
+//                    //  showOnBoarding.toggle()
+//
+//                        .foregroundColor(.white)
+//                        .font(.headline)
+//                        .frame(width: 350, height: 60)
+//                        .background(Color.blue)
+//                        .cornerRadius(15)
+//                        .padding(.top, 50)
+//                        .padding(.bottom,30)
+//                }
                 
             } 
             .background(Color.backgroundColorGrey) .ignoresSafeArea(.all)

@@ -28,18 +28,22 @@ struct Home : View {
         ZStack{
        
             VStack{
-                Button(action: {
+                Button("Custom AlertView!")   {
                     withAnimation{
-                        customAlert.toggle()
+                    //    customAlert.toggle()
+                        showingDetail = true
                     }
-                }) {
-                    Text("Custom AlertView!")
-                } 
-                
+                }
+                .sheet(isPresented: $showingDetail) {
+                    CustomAlertView(show: $showingDetail)
+                       
+               
             }
-            if customAlert{
-                CustomAlertView(show: $customAlert)
-            }
+//            if customAlert {
+//
+//                CustomAlertView(show: $customAlert)
+//                //showingDetail = true
+//            }
             
         
         }  .edgesIgnoringSafeArea(.all)
@@ -53,6 +57,7 @@ struct CustomAlertView: View {
     @Binding var show: Bool
     @State var isProfileTapped: Bool = false
     @State private var isButtonPressed: Bool = false
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         NavigationView{
             ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
@@ -75,7 +80,7 @@ struct CustomAlertView: View {
                                   //      Text("Yeah!!")
                                     
                 Button("Yeah!") {
-                          
+                    presentationMode.wrappedValue.dismiss()
                         }
                     
                 }.padding(.vertical,25)
@@ -95,7 +100,7 @@ struct CustomAlertView: View {
                     }
                 }
             
-            
+        }
         }
         
     }

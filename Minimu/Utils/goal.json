@@ -4,6 +4,7 @@
         "minType": "Material Minimalism",
         "typesubcategory": "Wardrobe",
         "frase": "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.)).",
+        "clutterImage": "camiseta"
         
         
     },
@@ -12,216 +13,247 @@
         "id": 2,
         "minType": "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Unpaired socks and old, stained, torn underwear."
+        "frase": "Unpaired socks and old, stained, torn underwear.",
+        "clutterImage": "cueca"
     },
     {
         "id": 3,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Underwear that you no longer wear or that are too small (pants, skirts, shorts, etc.)."
+        "frase": "Underwear that you no longer wear or that are too small (pants, skirts, shorts, etc.).",
+        "clutterImage": "calca"
     },
     
     {
         "id": 4,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Accessories you haven't used in a while - Glasses, watch, Earrings without pair; accessory, Oxidized jewelry."
+        "frase": "Accessories you haven't used in a while - Glasses, watch, Earrings without pair; accessory, Oxidized jewelry.",
+        "clutterImage": "oculos"
     },
     
     {
         "id": 5,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Old, unused shoes that hurt."
+        "frase": "Old, unused shoes that hurt.",
+        "clutterImage": "tenis"
     },
     
     {
         "id": 6,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Clothing for events and parties (it is often better to rent clothes for these events than to always buy something different)."
+        "frase": "Clothing for events and parties (it is often better to rent clothes for these events than to always buy something different).",
+        "clutterImage": "raquete"
     },
     
     {
         "id": 7,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Defective or unused bags, suitcases and wallets."
+        "frase": "Defective or unused bags, suitcases and wallets.",
+        "clutterImage": "mala"
     },
     
     {
         "id": 8,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Bored, stained or very old bedding that are in poor condition"
+        "frase": "Bored, stained or very old bedding that are in poor condition",
+        "clutterImage": "check"
     },
     
     {
         "id": 9,
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
-        "frase": "Gifts you have received but do not use."
+        "frase": "Gifts you have received but do not use.",
+        "clutterImage": "presente"
     },
     
     {
         "id": 10,
         "minType":  "Material Minimalism",
         "typesubcategory": "Bathroom",
-        "frase": "Expired products - Sample of products, shampoo, makeup, skincare, medicines."
+        "frase": "Expired products - Sample of products, shampoo, makeup, skincare, medicines.",
+        "clutterImage": "embalagem"
     },
     
     {
         "id": 11,
         "minType":  "Material Minimalism",
         "typesubcategory": "Bathroom",
-        "frase": "Repeat products."
+        "frase": "Repeat products.",
+        "clutterImage": "meia"
     },
     
     {
         "id": 12,
         "minType":  "Material Minimalism",
         "typesubcategory": "Bathroom",
-        "frase": "Packages with few products that are no longer used."
+        "frase": "Packages with few products that are no longer used.",
+        "clutterImage": "remedio"
     },
     
     {
         "id": 13,
         "minType":  "Material Minimalism",
         "typesubcategory":"Papers and documents",
-        "frase": "Excess of documents, slips and vouchers saved that can already be thrown away or scanned, with guarantees already expired or with a deadline already fulfilled."
+        "frase": "Excess of documents, slips and vouchers saved that can already be thrown away or scanned, with guarantees already expired or with a deadline already fulfilled.",
+        "clutterImage": "jornal"
     },
     
     {
         "id": 14,
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
-        "frase": "Instruction manuals."
+        "frase": "Instruction manuals.",
+        "clutterImage": "check"
     },
     
     {
         "id": 15,
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
-        "frase": "Christmas card, store cards."
+        "frase": "Christmas card, store cards.",
+        "clutterImage": "check"
     },
     
     {
         "id": 16,
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
-        "frase": "Post It in excess or already used and not discarded."
+        "frase": "Post It in excess or already used and not discarded.",
+        "clutterImage": "check"
     },
     
     {
         "id": 17,
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
-        "frase": "Notebooks that have been stored for a long time and are not being used."
+        "frase": "Notebooks that have been stored for a long time and are not being used.",
+        "clutterImage": "caderno"
     },
     
     {
         "id": 18,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "DVDs, disks, flash drives."
+        "frase": "DVDs, disks, flash drives.",
+        "clutterImage": "check"
     },
     
     {
         "id": 19,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Pens that don't work."
+        "frase": "Pens that don't work.",
+        "clutterImage": "caneta"
     },
     
     {
         "id": 20,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Books, consider between entertainment and practical."
+        "frase": "Books, consider between entertainment and practical.",
+        "clutterImage": "livro"
     },
     
     {
         "id": 21,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Unused appliances - headphones, chargers."
+        "frase": "Unused appliances - headphones, chargers.",
+        "clutterImage": "fone"
     },
     
     {
         "id": 22,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Decoration Items - Unused Christmas decorations."
+        "frase": "Decoration Items - Unused Christmas decorations.",
+        "clutterImage": "meia"
     },
     
     {
         "id": 23,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Unused kitchen utensils, like Plastic pots without lids or lids without pots."
+        "frase": "Unused kitchen utensils, like Plastic pots without lids or lids without pots.",
+        "clutterImage": "check"
     },
     
     {
         "id": 24,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Excess plastic bags."
+        "frase": "Excess plastic bags.",
+        "clutterImage": "check"
     },
     
     {
         "id": 25,
         "minType": "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
-        "frase": "Let go of 10 small items."
+        "frase": "Let go of 10 small items.",
+        "clutterImage": "check"
     },
     
     {
         "id": 26,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
-        "frase": "photos."
+        "frase": "photos.",
+        "clutterImage": "foto"
     },
     
     {
         "id": 27,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
-        "frase": "clothes that remind people or childhood."
+        "frase": "clothes that remind people or childhood.",
+        "clutterImage": "relogio"
     },
     
     {
         "id": 28,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
-        "frase": "Objects remind people or moments and phases."
+        "frase": "Objects remind people or moments and phases.",
+        "clutterImage": "medalha"
     },
     
     {
         "id": 29,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
-        "frase": "Old schoolbooks/papers."
+        "frase": "Old schoolbooks/papers.",
+        "clutterImage": "check"
     },
     
     {
         "id": 30,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
-        "frase": "Go to Settings > Screen Time and see how much time on the cell phone is needed? If not, rethink the amount of time and put a limit on usage on apps that you think are time consuming."
+        "frase": "Go to Settings > Screen Time and see how much time on the cell phone is needed? If not, rethink the amount of time and put a limit on usage on apps that you think are time consuming.",
+        "clutterImage": "celular"
     },
      
     {
         "id": 31,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
-        "frase": "Clean up your email, deleting old emails, advertisements, or describing the company email channel."
+        "frase": "Clean up your email, deleting old emails, advertisements, or describing the company email channel.",
+        "clutterImage": "email"
     },
      
     {
         "id": 32,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
-        "frase": "Think about your addictions, is there a website, app or digital space that doesn't do you good? If you don't change or decrease your use."
+        "frase": "Think about your addictions, is there a website, app or digital space that doesn't do you good? If you don't change or decrease your use.",
+        "clutterImage": "check"
     },
 
      
@@ -229,35 +261,40 @@
         "id": 33,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
-        "frase": "In the main communication channel you use, delete old messages or groups that you no longer need."
+        "frase": "In the main communication channel you use, delete old messages or groups that you no longer need.",
+        "clutterImage": "mensagem"
     },
      
     {
         "id": 34,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Files",
-        "frase": "View your cell phone photo album and see prints or images that are taking up space."
+        "frase": "View your cell phone photo album and see prints or images that are taking up space.",
+        "clutterImage": "check"
     },
      
     {
         "id": 35,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Files",
-        "frase": "On your computer, see files that you no longer need and that can be saved in different places."
+        "frase": "On your computer, see files that you no longer need and that can be saved in different places.",
+        "clutterImage": "arquivo"
     },
      
     {
         "id": 36,
         "minType":  "Mental Minimalism",
         "typesubcategory": "Rethink",
-        "frase": "Rethink the types of information you consume in all media and ask yourself: Are the intentions good? Do they concern the process of personal evolution? We often get stuck in something that is not in our life and we waste time with these worries."
+        "frase": "Rethink the types of information you consume in all media and ask yourself: Are the intentions good? Do they concern the process of personal evolution? We often get stuck in something that is not in our life and we waste time with these worries.",
+        "clutterImage": "check"
     },
 
     {
         "id": 37,
         "minType":  "Relational Minimalism",
         "typesubcategory": "Happiness",
-        "frase": "Make a list of people who bring you happiness."
+        "frase": "Make a list of people who bring you happiness.",
+        "clutterImage": "coracao"
     }
      
    

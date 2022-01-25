@@ -17,9 +17,9 @@ struct Checkmarker: View {
             VStack {
                 HStack{
                     ZStack{
-//                        Circle()
-//                            .stroke(selected ? Color("blue"): Color.red, lineWidth: 2)
-//                            .frame(width: 25, height: 25, alignment: .center)
+                        Circle()
+                            .stroke(selected ? Color("blue"): Color.red, lineWidth: 2)
+                            .frame(width: 25, height: 25, alignment: .center)
                         
 //                        if selected {
 //                            Image(systemName: "checkmark.circle.fill")

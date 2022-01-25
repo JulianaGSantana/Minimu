@@ -37,6 +37,8 @@
 		147028EE278F211A00D4A106 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147028ED278F211A00D4A106 /* Preview Assets.xcassets */; };
 		147028F0278F211A00D4A106 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147028EF278F211A00D4A106 /* Persistence.swift */; };
 		147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 147028F1278F211A00D4A106 /* Minimu.xcdatamodeld */; };
+		14F610CF279F861B00AD4F20 /* achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = 14F610CE279F861B00AD4F20 /* achieved.json */; };
+		14F610D1279F864100AD4F20 /* Achieved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D0279F864100AD4F20 /* Achieved.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		147028ED278F211A00D4A106 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		147028EF278F211A00D4A106 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		147028F2278F211A00D4A106 /* Minimu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Minimu.xcdatamodel; sourceTree = "<group>"; };
+		14F610CE279F861B00AD4F20 /* achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achieved.json; sourceTree = "<group>"; };
+		14F610D0279F864100AD4F20 /* Achieved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achieved.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				1429CB2B279C470A002D2686 /* Goal.swift */,
+				14F610D0279F864100AD4F20 /* Achieved.swift */,
 				1429CB29279C46D1002D2686 /* goal.json */,
+				14F610CE279F861B00AD4F20 /* achieved.json */,
 				147028E6278F211700D4A106 /* MinimuApp.swift */,
 				147028E8278F211700D4A106 /* ContentView.swift */,
 				141CDCFF2791B3E2003754C9 /* Views */,
@@ -237,6 +243,7 @@
 			files = (
 				1429CB2A279C46D1002D2686 /* goal.json in Resources */,
 				147028EE278F211A00D4A106 /* Preview Assets.xcassets in Resources */,
+				14F610CF279F861B00AD4F20 /* achieved.json in Resources */,
 				147028EB278F211A00D4A106 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +265,7 @@
 				14399E3F2793391200D455CF /* NewDetail.swift in Sources */,
 				144358582795ED5C00CD18B1 /* CardView.swift in Sources */,
 				147028E9278F211700D4A106 /* ContentView.swift in Sources */,
+				14F610D1279F864100AD4F20 /* Achieved.swift in Sources */,
 				14399E41279339F300D455CF /* Onboarding1View.swift in Sources */,
 				14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */,
 				1429CB282799EEB7002D2686 /* CounterFetcher.swift in Sources */,

@@ -11,19 +11,21 @@ import SwiftUI
 
 struct AchievedCard: View {
     
-    let achieved : Achieved
-    @State var blocked: Bool = false
+    var achieves : Achieved
+   // @State var blocked: Bool = false
+    @StateObject var modalData = ModalData()
+    @StateObject var counterFetcher = CounterFetcher()
     
     var body: some View {
         VStack{
             VStack{
                 VStack {
-                    Image("\(achieved.imageName)")
+                    Image(modalData.achieves[counterFetcher.counter].imageName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 69, height: 90)
                     
-                    Text(achieved.title)
+                    Text(self.achieves.title) //achieved.title //self.goals.frase
                         .font(.title3.bold())
                       //  .font(.subheadline)
                         .foregroundColor(.secondary)   
@@ -38,8 +40,8 @@ struct AchievedCard: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        AchievedCard(achieved: Achieved(id: 0, title: "hola", imageName: "caixa"))
-    }
-}
+//struct SwiftUIView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AchievedCard(achieved: modalData.achieves[counterFetcher.counter])
+//    }
+//}

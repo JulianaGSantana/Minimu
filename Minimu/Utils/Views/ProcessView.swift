@@ -11,9 +11,10 @@ struct ProcessView: View {
     @State var showSheetView = false
     @StateObject var modalData = ModalData()
     @StateObject var counterFetcher = CounterFetcher()
-    
-    
+  
+   // onboarding
     @State var showSheet: Bool = false
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical) {
@@ -38,8 +39,8 @@ struct ProcessView: View {
                             Image(systemName: "info.circle")
                         }.sheet(isPresented: $showSheetView) {
                             InformationView()
-                        } .padding(.trailing)
-                            .font(.system(size: 20))
+                        } .padding(.trailing, 20)
+                            .font(.system(size: 25))
                         
                         
                     }
@@ -62,7 +63,7 @@ struct ProcessView: View {
                     Text("Achieved")
                         .font(.title3.bold())
                         .padding(.leading)
-                    Scroll()
+                    Scroll(achieves: modalData.achieves[counterFetcher.counter])
                     
                     
                     //                    Text("Blocked")
@@ -82,7 +83,7 @@ struct ProcessView: View {
                         }.ignoresSafeArea()
                         
                     } onEnd: {
-                        print("Dismissed")
+                        showSheet = false
                     }
                 
             }  .frame(maxWidth: .infinity, alignment: .leading)

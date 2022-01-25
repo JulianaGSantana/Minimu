@@ -23,18 +23,21 @@ struct InformationView: View {
                         .padding(.leading)
                     
                     InformationCard(inf: "'Minimalism is a behavior that makes people more important than the things they have.'\nMinimalism: A Documentary About the Important Things")
+                        .font(.body)
                     
                     Text("Questions for help")
                         .font(.title3.bold())
                         .padding(.leading)
                     
                     InformationCard(inf: "Does this item add value to my life? \nDoes this spark joy? \nHow often do I use this item? \nHow does this add value to my life? \nHow does this help me live the life I want most?")
+                        .font(.body)
                     
                     Text("Pillars")
                         .font(.title3.bold())
                         .padding(.leading)
                     
                     InformationCard(inf: "To start this journey, we will start by minimizing the material items, so that we can then explore other areas such as digital, mental, temporal and relational. \n Material")
+                        .font(.body)
                     
                     //                Button("Dismiss") {
                     //                    presentationMode.wrappedValue.dismiss()

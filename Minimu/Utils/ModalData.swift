@@ -8,6 +8,7 @@
 import Foundation
 final class ModalData: ObservableObject{
     @Published var goals: [Goal] = load("goal.json")
+    @Published var achieves: [Achieved] = load("achieved.json")
 }
 
 
