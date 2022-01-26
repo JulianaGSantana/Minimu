@@ -27,7 +27,7 @@ struct AchievedCard: View {
                         .frame(width: 69, height: 90)
 
                     Text(self.achieves.title) //achieved.title //self.goals.frase
-                        .font(.title3.bold())
+                        .font(.headline)
                       //  .font(.subheadline)
                         .foregroundColor(.secondary)
                 }

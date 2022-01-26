@@ -38,6 +38,7 @@ struct InformationView: View {
                     
                     InformationCard(inf: "To start this journey, we will start by minimizing the material items, so that we can then explore other areas such as digital, mental, temporal and relational. \n Material")
                         .font(.body)
+                        
                     
                     //                Button("Dismiss") {
                     //                    presentationMode.wrappedValue.dismiss()

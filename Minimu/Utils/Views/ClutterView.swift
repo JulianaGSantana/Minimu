@@ -42,6 +42,8 @@ struct ClutterView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 60, height: 60)
+                             //   .background(.green)
+                                .opacity(0.0)
                                 //.opacity(0)
                         } else {
                         Image("\(goa.clutterImage)")
@@ -49,6 +51,7 @@ struct ClutterView: View {
                             .scaledToFit()
                             .frame(width: 60, height: 60)
                           //  .opacity(0)
+                            
                         }
                     }
                 }
