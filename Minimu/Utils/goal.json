@@ -124,20 +124,12 @@
         "id": 16,
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
-        "frase": "Post It in excess or already used and not discarded.",
-        "clutterImage": "postit"
-    },
-    
-    {
-        "id": 17,
-        "minType":  "Material Minimalism",
-        "typesubcategory": "Papers and documents",
         "frase": "Notebooks that have been stored for a long time and are not being used.",
         "clutterImage": "caderno"
     },
     
     {
-        "id": 18,
+        "id": 17,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "DVDs, disks, flash drives.",
@@ -145,7 +137,7 @@
     },
     
     {
-        "id": 19,
+        "id": 18,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Pens that don't work.",
@@ -153,7 +145,7 @@
     },
     
     {
-        "id": 20,
+        "id": 19,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Books, consider between entertainment and practical.",
@@ -161,7 +153,7 @@
     },
     
     {
-        "id": 21,
+        "id": 20,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Unused appliances - headphones, chargers.",
@@ -169,7 +161,7 @@
     },
     
     {
-        "id": 22,
+        "id": 21,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Decoration Items - Unused Christmas decorations.",
@@ -177,7 +169,7 @@
     },
     
     {
-        "id": 23,
+        "id": 22,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Unused kitchen utensils, like Plastic pots without lids or lids without pots.",
@@ -185,7 +177,7 @@
     },
     
     {
-        "id": 24,
+        "id": 23,
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Excess plastic bags.",
@@ -193,7 +185,7 @@
     },
     
     {
-        "id": 25,
+        "id": 24,
         "minType": "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Let go of 10 small items.",
@@ -201,7 +193,7 @@
     },
     
     {
-        "id": 26,
+        "id": 25,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
         "frase": "photos.",
@@ -209,7 +201,7 @@
     },
     
     {
-        "id": 27,
+        "id": 26,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
         "frase": "clothes that remind people or childhood.",
@@ -217,7 +209,7 @@
     },
     
     {
-        "id": 28,
+        "id": 27,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
         "frase": "Objects remind people or moments and phases.",
@@ -225,7 +217,7 @@
     },
     
     {
-        "id": 29,
+        "id": 28,
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
         "frase": "Old schoolbooks/papers.",
@@ -233,7 +225,7 @@
     },
     
     {
-        "id": 30,
+        "id": 29,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
         "frase": "Go to Settings > Screen Time and see how much time on the cell phone is needed? If not, rethink the amount of time and put a limit on usage on apps that you think are time consuming.",
@@ -241,7 +233,7 @@
     },
      
     {
-        "id": 31,
+        "id": 30,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
         "frase": "Clean up your email, deleting old emails, advertisements, or describing the company email channel.",
@@ -249,7 +241,7 @@
     },
      
     {
-        "id": 32,
+        "id": 31,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
         "frase": "Think about your addictions, is there a website, app or digital space that doesn't do you good? If you don't change or decrease your use.",
@@ -258,7 +250,7 @@
 
      
     {
-        "id": 33,
+        "id": 32,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
         "frase": "In the main communication channel you use, delete old messages or groups that you no longer need.",
@@ -266,7 +258,7 @@
     },
      
     {
-        "id": 34,
+        "id": 33,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Files",
         "frase": "View your cell phone photo album and see prints or images that are taking up space.",
@@ -274,7 +266,7 @@
     },
      
     {
-        "id": 35,
+        "id": 34,
         "minType":  "Digital Minimalism",
         "typesubcategory": "Files",
         "frase": "On your computer, see files that you no longer need and that can be saved in different places.",
@@ -282,15 +274,15 @@
     },
      
     {
-        "id": 36,
+        "id": 35,
         "minType":  "Mental Minimalism",
         "typesubcategory": "Rethink",
         "frase": "Rethink the types of information you consume in all media and ask yourself: Are the intentions good? Do they concern the process of personal evolution? We often get stuck in something that is not in our life and we waste time with these worries.",
-        "clutterImage": "reflexão"
+        "clutterImage": "reflexao"
     },
 
     {
-        "id": 37,
+        "id": 36,
         "minType":  "Relational Minimalism",
         "typesubcategory": "Happiness",
         "frase": "Make a list of people who bring you happiness.",

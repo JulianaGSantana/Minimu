@@ -16,6 +16,10 @@ import SwiftUI
 
 struct ClutterView: View {
    // var goals: Goal
+    var goals:[Goal] {
+            @State var data: [Goal] = modalData.goals
+                    return data
+            }
     @StateObject var modalData = ModalData()
     @StateObject var counterFetcher = CounterFetcher()
   
@@ -28,11 +32,20 @@ struct ClutterView: View {
 
         var body: some View {
             ScrollView {
-//                LazyVGrid(columns: columns, spacing: 20) {
-//                    ForEach(goals, id: \.self) { goa in
-//                        Image("\(goa.clutterImage)")
-//
-                        
+                Spacer()
+                Spacer()
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(goals, id: \.self) { goa in
+                        Image("\(goa.clutterImage)")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60, height: 60)
+                    }
+                }
+            }
+        }
+}
+                    
 //                        ForEach(achieves, id: \.self) {  in
 //                            Image("\(item.imageName)")
 //                            .resizable()
@@ -42,22 +55,22 @@ struct ClutterView: View {
 //                    }
 //                }
 //                .padding(.horizontal)
- }
+ 
 //          
-        }
-     
+        
+            
       
 //    
-}
+
             
 
 
-//struct ClutterView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ClutterView()
-//
-//    }
-//}
+struct ClutterView_Previews: PreviewProvider {
+    static var previews: some View {
+        ClutterView()
+
+    }
+}
 
 
 

@@ -63,7 +63,7 @@ struct ProcessView: View {
                     Text("Achieved")
                         .font(.title3.bold())
                         .padding(.leading)
-                    Scroll(achieves: modalData.achieves[counterFetcher.counter])
+                    Scroll()
                     
                     
                     //                    Text("Blocked")

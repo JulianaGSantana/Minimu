@@ -38,8 +38,10 @@ struct Scroll: View {
     ]
     
   //  @State var blocked: Bool = false
-    
-    var achieves : Achieved
+    var achieves:[Achieved] {
+            @State var data: [Achieved] = modalData.achieves
+                    return data
+            }
     @StateObject var modalData = ModalData()
     @StateObject var counterFetcher = CounterFetcher()
   
@@ -48,11 +50,11 @@ struct Scroll: View {
         ScrollView{
             Spacer()
             //aquiiii
-//            LazyVGrid(columns: layout, spacing: 40) {
-//                ForEach(achieves, id: \.self) { archi in
-//                    AchievedCard(achieves: archi).opacity(0.9)
-//                }
-//            }
+            LazyVGrid(columns: layout, spacing: 40) {
+                ForEach(achieves, id: \.self) { archi in
+                    AchievedCard(achieves: archi).opacity(0.5)
+                }
+            }
             
 //            ForEach(achieves, id: \.self) { item in
 //                Image("\(item.imageName)")
@@ -66,11 +68,11 @@ struct Scroll: View {
     }
 }
 
-//struct Scroll_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Scroll()
-//    }
-//}
+struct Scroll_Previews: PreviewProvider {
+    static var previews: some View {
+        Scroll()
+    }
+}
 //if counterFetcher == 3 {
 //
 //}
