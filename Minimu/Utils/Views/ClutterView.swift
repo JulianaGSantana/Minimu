@@ -37,10 +37,19 @@ struct ClutterView: View {
                 Spacer()
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(goals, id: \.self) { goa in
+                        if counterFetcher.counter >= goa.id{
+                            Image("\(goa.clutterImage)")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                //.opacity(0)
+                        } else {
                         Image("\(goa.clutterImage)")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 60, height: 60)
+                          //  .opacity(0)
+                        }
                     }
                 }
               

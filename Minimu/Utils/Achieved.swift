@@ -11,9 +11,10 @@ import SwiftUI
 struct Achieved: Codable, Identifiable, Hashable {
     var id: Int
     var title: String
+    var valor: Int
     
     var imageName: String
-//    var imagem: Image {
-//        Image(imageName)
-//    }
+    var achimagem: Image {
+        Image(imageName)
+    }
 }

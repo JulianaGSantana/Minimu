@@ -50,12 +50,14 @@ struct CardView: View {
                 Button(action: {
                     updateCounter()
                     
+                    itensDiscard()
                    
-                    print("\(selectedNumber)")
-                    somatorio = somatorio + selectedNumber
-                    guardar.set(selectedNumber, forKey: "somando")
-                    guardar.set(somatorio, forKey: "resultadoTotal")
-                    print("\(somatorio)")
+//                    print("\(selectedNumber)")
+//                    somatorio = somatorio + selectedNumber
+//                    guardar.set(selectedNumber, forKey: "somando")
+//                    guardar.set(somatorio, forKey: "resultadoTotal")
+//                    print("\(somatorio)")
+                    
 //                    dismiss()
                      //fazer dismiss
 //                    for i in goals.count {
@@ -87,6 +89,14 @@ struct CardView: View {
         let newCounter = currentCounter + 1
        // UserDefaults().set(newCounter, forKey: "Counter")
         counterFetcher.saveCounterToUserDefault(newCounter)
+    }
+    
+    func itensDiscard() {
+        print("\(selectedNumber)")
+        somatorio = somatorio + selectedNumber
+        guardar.set(selectedNumber, forKey: "somando")
+        guardar.set(somatorio, forKey: "resultadoTotal")
+        print("\(somatorio)")
     }
 }
 

@@ -27,7 +27,7 @@ struct Scroll: View {
                     return data
             }
     @StateObject var modalData = ModalData()
-    @StateObject var counterFetcher = CounterFetcher()
+     var counterFetcher = CounterFetcher()
   
  //   var counterFetcher : CounterFetcher
     var body: some View {
@@ -36,7 +36,12 @@ struct Scroll: View {
             //aquiiii
             LazyVGrid(columns: layout, spacing: 40) {
                 ForEach(achieves, id: \.self) { archi in
-                    AchievedCard(achieves: archi).opacity(0.6)
+                    if counterFetcher.counter >= archi.valor{
+                        AchievedCard(achieves: archi, counterFetcher: counterFetcher).opacity(1)
+                    } else {
+                        AchievedCard(achieves: archi, counterFetcher: counterFetcher).opacity(0.4)
+                        
+                    }
                 }
             }
             

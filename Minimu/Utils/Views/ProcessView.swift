@@ -11,6 +11,12 @@ struct ProcessView: View {
     @State var showSheetView = false
     @StateObject var modalData = ModalData()
     @StateObject var counterFetcher = CounterFetcher()
+    
+    //modal teste FlexibleSheet
+   // @State private var sheetMode: SheetMode = .none
+    
+    //modal nova
+    @State private var showingSheet = false
   
    // onboarding
     @State var showSheet: Bool = false
@@ -25,11 +31,17 @@ struct ProcessView: View {
                         .padding(.leading)
                     
                     HStack{
-              
+                        if counterFetcher.counter > 30{
+                            Text("acabou!")
+                                .font(.title3.bold())
+                                .padding(.leading)
+                        } else {
+                            
                         Text(modalData.goals[counterFetcher.counter].minType)
                             .font(.title3.bold())
                             .padding(.leading)
                         
+                        }
                         Spacer()
                         
                         
@@ -42,18 +54,24 @@ struct ProcessView: View {
                         } .padding(.trailing, 20)
                             .font(.system(size: 25))
                         
-                        
                     }
+                   
                     Text(modalData.goals[counterFetcher.counter].typesubcategory)
                         .font(.headline)
                         .foregroundColor(Color.secondary)
                         .padding(.leading)
                     
+                   
                     Checkmarker(goals: modalData.goals[counterFetcher.counter])
                     
                         .ignoresSafeArea()
                         .onTapGesture {
-                            showSheet.toggle()
+//                            FlexibleSheet(sheetMode: $sheetMode) {CardView(selectedNumber: 1, somatorio: 0, counterFetcher: counterFetcher)}
+                            showingSheet.toggle()
+                            //showSheet.toggle()
+                        }
+                        .sheet(isPresented: $showingSheet) {
+                            SheetView(selectedNumber: 1, somatorio: 0, counterFetcher: counterFetcher)
                         }
     
                     Text("Achievements")
@@ -63,7 +81,7 @@ struct ProcessView: View {
                     Text("Achieved")
                         .font(.title3.bold())
                         .padding(.leading)
-                    Scroll()
+                    Scroll(counterFetcher: counterFetcher)
                     
                     
                     //                    Text("Blocked")
@@ -72,19 +90,19 @@ struct ProcessView: View {
                     //                    Scroll()
                 }.navigationTitle("Process")
                 
-                    .halfSheet(showSheet: $showSheet){
-                        
-                        ZStack{
-                            
-                            VStack{
-                                CardView(selectedNumber: 0, somatorio: 0, counterFetcher: counterFetcher)
-                                
-                            }
-                        }.ignoresSafeArea()
-                        
-                    } onEnd: {
-                        showSheet = false
-                    }
+//                    .halfSheet(showSheet: $showSheet){
+//
+//                        ZStack{
+//
+//                            VStack{
+//                                CardView(selectedNumber: 1, somatorio: 0, counterFetcher: counterFetcher)
+//
+//                            }
+//                        }.ignoresSafeArea()
+//
+//                    } onEnd: {
+//                        showSheet = false
+//                    }
                 
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)

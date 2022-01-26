@@ -14,14 +14,14 @@ struct AchievedCard: View {
     var achieves : Achieved
    // @State var blocked: Bool = false
     @StateObject var modalData = ModalData()
-    @StateObject var counterFetcher = CounterFetcher()
+    var counterFetcher = CounterFetcher()
     
     var body: some View {
         VStack{
            
             VStack{
                 VStack {
-                    Image(modalData.achieves[counterFetcher.counter].imageName)
+                    Image(achieves.imageName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 69, height: 90)

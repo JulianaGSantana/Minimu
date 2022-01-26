@@ -39,6 +39,8 @@
 		147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 147028F1278F211A00D4A106 /* Minimu.xcdatamodeld */; };
 		14F610CF279F861B00AD4F20 /* achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = 14F610CE279F861B00AD4F20 /* achieved.json */; };
 		14F610D1279F864100AD4F20 /* Achieved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D0279F864100AD4F20 /* Achieved.swift */; };
+		14F610DA27A1C57200AD4F20 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D927A1C57200AD4F20 /* SheetView.swift */; };
+		14F610DC27A1C80100AD4F20 /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610DB27A1C80100AD4F20 /* FlexibleSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		147028F2278F211A00D4A106 /* Minimu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Minimu.xcdatamodel; sourceTree = "<group>"; };
 		14F610CE279F861B00AD4F20 /* achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achieved.json; sourceTree = "<group>"; };
 		14F610D0279F864100AD4F20 /* Achieved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achieved.swift; sourceTree = "<group>"; };
+		14F610D927A1C57200AD4F20 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		14F610DB27A1C80100AD4F20 /* FlexibleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				14399E4227933A4900D455CF /* Onboarding2View.swift */,
 				14399E4427933A5B00D455CF /* Onboarding3View.swift */,
 				144358532795A6AF00CD18B1 /* OnboardingStepsView.swift */,
+				14F610D927A1C57200AD4F20 /* SheetView.swift */,
+				14F610DB27A1C80100AD4F20 /* FlexibleSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 				14399E3F2793391200D455CF /* NewDetail.swift in Sources */,
 				144358582795ED5C00CD18B1 /* CardView.swift in Sources */,
 				147028E9278F211700D4A106 /* ContentView.swift in Sources */,
+				14F610DC27A1C80100AD4F20 /* FlexibleSheet.swift in Sources */,
 				14F610D1279F864100AD4F20 /* Achieved.swift in Sources */,
 				14399E41279339F300D455CF /* Onboarding1View.swift in Sources */,
 				14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */,
@@ -279,6 +286,7 @@
 				14399E3627922D4F00D455CF /* Checkmarker.swift in Sources */,
 				147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */,
 				143985242796F45E0079CEF8 /* OnboardingStateFetcher.swift in Sources */,
+				14F610DA27A1C57200AD4F20 /* SheetView.swift in Sources */,
 				147028E7278F211700D4A106 /* MinimuApp.swift in Sources */,
 				1429CB2E279C47DE002D2686 /* ModalData.swift in Sources */,
 				143985222796E4C30079CEF8 /* ListDay.swift in Sources */,
@@ -430,7 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,7 +467,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
