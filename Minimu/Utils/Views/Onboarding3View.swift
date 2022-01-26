@@ -12,6 +12,7 @@ struct Onboarding3View: View {
     @State private var selectedFrequency: String = "Daily"
     
     
+    
     var body: some View {
        // ScrollView{
         VStack{
@@ -23,9 +24,6 @@ struct Onboarding3View: View {
                 .frame(width: 300, alignment: .center)
                 .padding()
             
-            //                Text("To start this journey, we will start by minimizing material items, so that we can then explore other areas.")
-            //                //   .frame(width: 350, alignment: .leading)
-            //                    .padding()
             Text("Going minimalist is an ongoing process, so the need for notifications is essential. How often would you like to do this process?")
             //   .frame(width: 350, alignment: .leading)
                 .padding()
@@ -58,15 +56,13 @@ struct Onboarding3View: View {
                 //  .padding(.top, 0)
                     .padding(.bottom,40)
             }
-            
-            //Button(action: {self.OnboardingStepsView.toggle()
-            
-            //  })
-        
+    
         }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
-        //     }
-           
+     
     }
+        
+    
+    
     func changeOnboardingState() {
         self.onboardingStateFetcher.changingOnboardingState()
     }

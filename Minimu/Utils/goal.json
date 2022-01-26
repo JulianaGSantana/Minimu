@@ -85,7 +85,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Bathroom",
         "frase": "Repeat products.",
-        "clutterImage": "meia"
+        "clutterImage": "repetido"
     },
     
     {
@@ -109,7 +109,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
         "frase": "Instruction manuals.",
-        "clutterImage": "check"
+        "clutterImage": "manual"
     },
     
     {
@@ -117,7 +117,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
         "frase": "Christmas card, store cards.",
-        "clutterImage": "check"
+        "clutterImage": "natal"
     },
     
     {
@@ -125,7 +125,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Papers and documents",
         "frase": "Post It in excess or already used and not discarded.",
-        "clutterImage": "check"
+        "clutterImage": "postit"
     },
     
     {
@@ -141,7 +141,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "DVDs, disks, flash drives.",
-        "clutterImage": "check"
+        "clutterImage": "DVD"
     },
     
     {
@@ -181,7 +181,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Unused kitchen utensils, like Plastic pots without lids or lids without pots.",
-        "clutterImage": "check"
+        "clutterImage": "pote"
     },
     
     {
@@ -189,7 +189,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Miscellaneous items",
         "frase": "Excess plastic bags.",
-        "clutterImage": "check"
+        "clutterImage": "sacola"
     },
     
     {
@@ -205,7 +205,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
         "frase": "photos.",
-        "clutterImage": "foto"
+        "clutterImage": "lixeira"
     },
     
     {
@@ -229,7 +229,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Sentimental Items",
         "frase": "Old schoolbooks/papers.",
-        "clutterImage": "check"
+        "clutterImage": "infancia"
     },
     
     {
@@ -253,7 +253,7 @@
         "minType":  "Digital Minimalism",
         "typesubcategory": "Social networks",
         "frase": "Think about your addictions, is there a website, app or digital space that doesn't do you good? If you don't change or decrease your use.",
-        "clutterImage": "check"
+        "clutterImage": "site"
     },
 
      
@@ -270,7 +270,7 @@
         "minType":  "Digital Minimalism",
         "typesubcategory": "Files",
         "frase": "View your cell phone photo album and see prints or images that are taking up space.",
-        "clutterImage": "check"
+        "clutterImage": "lixeira"
     },
      
     {
@@ -286,7 +286,7 @@
         "minType":  "Mental Minimalism",
         "typesubcategory": "Rethink",
         "frase": "Rethink the types of information you consume in all media and ask yourself: Are the intentions good? Do they concern the process of personal evolution? We often get stuck in something that is not in our life and we waste time with these worries.",
-        "clutterImage": "check"
+        "clutterImage": "reflexão"
     },
 
     {

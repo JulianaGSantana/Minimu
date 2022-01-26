@@ -14,7 +14,7 @@
 		1429CB2C279C470A002D2686 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB2B279C470A002D2686 /* Goal.swift */; };
 		1429CB2E279C47DE002D2686 /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB2D279C47DE002D2686 /* ModalData.swift */; };
 		1429CB30279CE633002D2686 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB2F279CE633002D2686 /* Alert.swift */; };
-		1429CB34279EE74F002D2686 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB33279EE74E002D2686 /* LocalNotificationManager.swift */; };
+		1429CB34279EE74F002D2686 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB33279EE74E002D2686 /* NotificationManager.swift */; };
 		143985222796E4C30079CEF8 /* ListDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985212796E4C30079CEF8 /* ListDay.swift */; };
 		143985242796F45E0079CEF8 /* OnboardingStateFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */; };
 		143985262796FF820079CEF8 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985252796FF820079CEF8 /* BottomSheetView.swift */; };
@@ -49,7 +49,7 @@
 		1429CB2B279C470A002D2686 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		1429CB2D279C47DE002D2686 /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
 		1429CB2F279CE633002D2686 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		1429CB33279EE74E002D2686 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		1429CB33279EE74E002D2686 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		143985212796E4C30079CEF8 /* ListDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDay.swift; sourceTree = "<group>"; };
 		143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStateFetcher.swift; sourceTree = "<group>"; };
 		143985252796FF820079CEF8 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */,
 				1429CB272799EEB7002D2686 /* CounterFetcher.swift */,
 				1429CB2D279C47DE002D2686 /* ModalData.swift */,
-				1429CB33279EE74E002D2686 /* LocalNotificationManager.swift */,
+				1429CB33279EE74E002D2686 /* NotificationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 				14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */,
 				1429CB282799EEB7002D2686 /* CounterFetcher.swift in Sources */,
 				14399E3D2793286100D455CF /* Scroll.swift in Sources */,
-				1429CB34279EE74F002D2686 /* LocalNotificationManager.swift in Sources */,
+				1429CB34279EE74F002D2686 /* NotificationManager.swift in Sources */,
 				141CDD032791B447003754C9 /* ProcessView.swift in Sources */,
 				14399E4527933A5B00D455CF /* Onboarding3View.swift in Sources */,
 				1429CB2C279C470A002D2686 /* Goal.swift in Sources */,

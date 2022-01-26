@@ -18,8 +18,7 @@ struct ClutterView: View {
    // var goals: Goal
     @StateObject var modalData = ModalData()
     @StateObject var counterFetcher = CounterFetcher()
-    
- 
+  
         let columns = [
             GridItem(.flexible()),
             GridItem(.flexible()),
@@ -45,7 +44,9 @@ struct ClutterView: View {
 //                .padding(.horizontal)
  }
 //          
-     }
+        }
+     
+      
 //    
 }
             

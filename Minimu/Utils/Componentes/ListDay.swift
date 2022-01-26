@@ -10,6 +10,7 @@ import SwiftUI
 struct ListDay: View {
     @State var items: [String] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"]
     @State var selections: [String] = []
+    @State private var notificationManager = NotificationManager()
 
     var body: some View {
         List {
