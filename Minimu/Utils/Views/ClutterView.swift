@@ -16,6 +16,7 @@ import SwiftUI
 
 struct ClutterView: View {
    // var goals: Goal
+   
     var goals:[Goal] {
             @State var data: [Goal] = modalData.goals
                     return data
@@ -42,6 +43,7 @@ struct ClutterView: View {
                             .frame(width: 60, height: 60)
                     }
                 }
+              
             }
         }
 }

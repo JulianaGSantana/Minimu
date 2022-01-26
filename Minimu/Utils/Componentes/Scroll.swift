@@ -14,23 +14,7 @@ import SwiftUI
 //    let imageName: String
 //}
 struct Scroll: View {
-    //  let data = Array(1...5).map {"\($0)"}
-    
-//    let achieveds : [Achieved] = [
-//        Achieved(id: 0, title: "cndscjdsj", imageName: "check"),
-//        Achieved(id: 1, title: "cccdj", imageName: "computador"),
-//        Achieved(id: 2, title: "cdscjdsj", imageName: "cueca"),
-//        Achieved(id: 3, title: "cndj", imageName: "coracao"),
-//        Achieved(id: 4, title: "cdscjdsj", imageName: "cueca"),
-//        Achieved(id: 5, title: "cdscjdsj", imageName: "cueca"),
-//        Achieved(id: 6, title: "cndscjdsj", imageName: "check"),
-//        Achieved(id: 7, title: "cccdj", imageName: "computador"),
-//        Achieved(id: 8, title: "cdscjdsj", imageName: "cueca"),
-//        Achieved(id: 9, title: "cndj", imageName: "coracao"),
-//        Achieved(id: 10, title: "cdscjdsj", imageName: "cueca"),
-//        Achieved(id: 11, title: "cdscjdsj", imageName: "cueca"),
-//        Achieved(id: 12, title: "cdscjdsj", imageName: "cueca"),
-//    ]
+
     
     let layout = [
         GridItem(.flexible()),
@@ -52,19 +36,12 @@ struct Scroll: View {
             //aquiiii
             LazyVGrid(columns: layout, spacing: 40) {
                 ForEach(achieves, id: \.self) { archi in
-                    AchievedCard(achieves: archi).opacity(0.5)
+                    AchievedCard(achieves: archi).opacity(0.6)
                 }
             }
             
-//            ForEach(achieves, id: \.self) { item in
-//                Image("\(item.imageName)")
         }
         
-//        { item in
-//            Image("\(item.imageName)")
-//        if counterFetche.self == 3 {
-//           AchievedCard(achieved: Achieved(id: 2, title: "teste", imageName: "cueca"))
-//        }
     }
 }
 

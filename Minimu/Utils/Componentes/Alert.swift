@@ -34,11 +34,9 @@ struct Home : View {
                         showingDetail = true
                     }
                 }
-                .sheet(isPresented: $showingDetail) {
+                .fullScreenCover(isPresented: $showingDetail) {
                     CustomAlertView(show: $showingDetail)
-                       
-               
-            }
+                }
 //            if customAlert {
 //
 //                CustomAlertView(show: $customAlert)

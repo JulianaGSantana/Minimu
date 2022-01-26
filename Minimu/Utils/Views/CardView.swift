@@ -8,34 +8,65 @@
 import SwiftUI
 
 struct CardView: View {
-    @State private var selectedNumber = "5"
+  //  @Binding var showSheet: Bool
+    @State var selectedNumber: Int
+    let guardar = UserDefaults.standard
+    @State var somatorio: Int
+//    @StateObject var modalData = ModalData()
+//    var goals:[Goal] {
+//            @State var data: [Goal] = modalData.goals
+//                    return data
+//            }
+    //var position: Int
     var counterFetcher : CounterFetcher
     var body: some View {
+    
+//        struct dismissView: View {
+//            @Environment(\.dismiss) var dismiss
+//        }
+        
         NavigationView {
             VStack{
                 Text("How many items did you manage to discard?")
                     .font(.title2.bold())
                     .frame(width: 350, alignment: .center)
-                
+               
                 // Form {
                 Section {
                     Picker("Number", selection: $selectedNumber) {
-                        ForEach(1...100, id: \.self) {
-                            selectedNumber in Text("\(selectedNumber)")
+                        ForEach(1...100, id: \.self) { selectedNumber in
+                            Text("\(selectedNumber)")
                             
                         }
+                       
                     }
                     .pickerStyle(.wheel)
+                    
                 } .frame(width: 100, height: 150)
-                
+               
+               
                 
                 //  Text("\(selectedNumber) items")
                 Button(action: {
                     updateCounter()
-                        //adicionar dismiss nesse botão
-                    //Como linkar o Array de Strings com o contador?
-                    //ajustar essa view com o checkmark
-                }) {
+                    
+                   
+                    print("\(selectedNumber)")
+                    somatorio = somatorio + selectedNumber
+                    guardar.set(selectedNumber, forKey: "somando")
+                    guardar.set(somatorio, forKey: "resultadoTotal")
+                    print("\(somatorio)")
+//                    dismiss()
+                     //fazer dismiss
+//                    for i in goals.count {
+//                        if goals[i].id == id{ //id que cliquei pra apagar
+//                          position = i
+//                            break
+//                        }
+//                    }
+//                    goals.remove(at: position)
+                    
+                }){
                     Text("Done")
                     //  showOnBoarding.toggle()
                     
@@ -48,6 +79,7 @@ struct CardView: View {
                 }
             }
         }
+       
     }
     func updateCounter() {
         let currentCounter = UserDefaults().integer(forKey: "Counter")
@@ -57,6 +89,8 @@ struct CardView: View {
         counterFetcher.saveCounterToUserDefault(newCounter)
     }
 }
+
+
 
 //
 //struct CardView_Previews: PreviewProvider {

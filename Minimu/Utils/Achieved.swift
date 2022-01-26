@@ -13,7 +13,7 @@ struct Achieved: Codable, Identifiable, Hashable {
     var title: String
     
     var imageName: String
-    var imagem: Image {
-        Image(imageName)
-    }
+//    var imagem: Image {
+//        Image(imageName)
+//    }
 }

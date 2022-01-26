@@ -18,26 +18,27 @@ struct AchievedCard: View {
     
     var body: some View {
         VStack{
+           
             VStack{
                 VStack {
                     Image(modalData.achieves[counterFetcher.counter].imageName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 69, height: 90)
-                    
+
                     Text(self.achieves.title) //achieved.title //self.goals.frase
                         .font(.title3.bold())
                       //  .font(.subheadline)
-                        .foregroundColor(.secondary)   
+                        .foregroundColor(.secondary)
                 }
                 .frame(width: 150, height: 200)
-                
+
             }.background(Color .cardColor)
             //  .shadow(radius: 4)
                 .cornerRadius(10)
-            //  .opacity(0.5) 
+            //  .opacity(0.5)
         } .shadow(radius: 4)
-    }
+   }
 }
 
 //struct SwiftUIView_Previews: PreviewProvider {

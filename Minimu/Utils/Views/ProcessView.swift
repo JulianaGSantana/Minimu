@@ -77,7 +77,7 @@ struct ProcessView: View {
                         ZStack{
                             
                             VStack{
-                                CardView(counterFetcher: counterFetcher)
+                                CardView(selectedNumber: 0, somatorio: 0, counterFetcher: counterFetcher)
                                 
                             }
                         }.ignoresSafeArea()
