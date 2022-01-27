@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ProcessView: View {
     @State var showSheetView = false
-@State var showSheet: Bool = false
+    @StateObject var modalData = ModalData()
+    @StateObject var counterFetcher = CounterFetcher()
+    
+  
+    //popup
+    @State private var showingModal = false
+    
+    //modal nova
+    @State private var showingSheet = false
+  
+   // onboarding
+    @State var showSheet: Bool = false
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical) {
@@ -17,81 +29,82 @@ struct ProcessView: View {
                     
                     Text("Goal")
                         .font(.title.bold())
-                      .padding(.leading)
+                        .padding(.leading)
                     
                     HStack{
-                    
-                    Text("Material Minimalism")
-                        .font(.title3.bold())
-                        .padding(.leading)
+                        if counterFetcher.counter >= 36{
+                            Text("acabou!")
+                                .font(.title3.bold())
+                                .padding(.leading)
+                        } else {
+                            
+                        Text(modalData.goals[counterFetcher.counter].minType)
+                            .font(.title3.bold())
+                            .padding(.leading)
+                        }
                         
                         Spacer()
-                     
-                     
+                        
+                        
                         Button(action: {
-                                   self.showSheetView.toggle()
-                               }) {
-                                   Image(systemName: "info.circle")
-                               }.sheet(isPresented: $showSheetView) {
-                                   InformationView()
-                               } .padding(.trailing)
-                            .font(.system(size: 20))
-                            
-                    
-                }
-                    Text("Wardrobe")
+                            self.showSheetView.toggle()
+                        }) {
+                            Image(systemName: "info.circle")
+                        }.sheet(isPresented: $showSheetView) {
+                            InformationView()
+                        } .padding(.trailing, 20)
+                            .font(.system(size: 25))
+                        
+                    }
+                   
+                    if counterFetcher.counter >= 36{
+                        Text("em breve terá mais")
+                            .font(.headline)
+                            .foregroundColor(Color.secondary)
+                            .padding(.leading)
+                    } else {
+                    Text(modalData.goals[counterFetcher.counter].typesubcategory)
                         .font(.headline)
                         .foregroundColor(Color.secondary)
                         .padding(.leading)
-
-                    Checkmarker()
+                    }
+                    
+                    if counterFetcher.counter >= 36{
+                      Text(" ")
+                    } else {
+                    Checkmarker(goals: modalData.goals[counterFetcher.counter])
+                    
                         .ignoresSafeArea()
                         .onTapGesture {
-                            showSheet.toggle()
+//
+                            showingSheet.toggle()
+                            
                         }
-                    
-//                    Button {
-//                        showSheet.toggle()
-//                    } label: {
-//                        Text("Prensent")
-//                    }
                         
-
-           Text("Achievements")
+                        .sheet(isPresented: $showingSheet) {
+                            SheetView(selectedNumber: 5, somatorio: 0, counterFetcher: counterFetcher)
+                        }
+                    }
+                    
+                    
+    
+                    Text("Achievements")
                         .font(.title.bold())
                         .padding(.leading)
-                   
+                    
                     Text("Achieved")
                         .font(.title3.bold())
                         .padding(.leading)
-                    Scroll()
-                       
-                       
-//                    Text("Blocked")
-//                        .font(.title3.bold())
-//                        .padding(.leading)
-//                    Scroll()
-            }.navigationTitle("Process")
+                    Scroll(counterFetcher: counterFetcher)
                 
-                    .halfSheet(showSheet: $showSheet){
-           
-                        ZStack{
-                            
-                            VStack{
-                                CardView()
-                                
-                            }
-                        }.ignoresSafeArea()
-                            
-                    } onEnd: {
-                        print("Dismissed")
-                    }
+                }.navigationTitle("Process")
+                
                 
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .background(Color.backgroundColorGrey)
-                
-    } 
+            
+        } 
     }
 }
 struct ProcessView_Previews: PreviewProvider {

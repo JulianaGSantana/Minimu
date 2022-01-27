@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		141CDD012791B420003754C9 /* ClutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDD002791B420003754C9 /* ClutterView.swift */; };
 		141CDD032791B447003754C9 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDD022791B447003754C9 /* ProcessView.swift */; };
+		1429CB282799EEB7002D2686 /* CounterFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB272799EEB7002D2686 /* CounterFetcher.swift */; };
+		1429CB2A279C46D1002D2686 /* goal.json in Resources */ = {isa = PBXBuildFile; fileRef = 1429CB29279C46D1002D2686 /* goal.json */; };
+		1429CB2C279C470A002D2686 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB2B279C470A002D2686 /* Goal.swift */; };
+		1429CB2E279C47DE002D2686 /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB2D279C47DE002D2686 /* ModalData.swift */; };
+		1429CB34279EE74F002D2686 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429CB33279EE74E002D2686 /* NotificationManager.swift */; };
 		143985222796E4C30079CEF8 /* ListDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985212796E4C30079CEF8 /* ListDay.swift */; };
 		143985242796F45E0079CEF8 /* OnboardingStateFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */; };
 		143985262796FF820079CEF8 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143985252796FF820079CEF8 /* BottomSheetView.swift */; };
@@ -31,11 +36,20 @@
 		147028EE278F211A00D4A106 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147028ED278F211A00D4A106 /* Preview Assets.xcassets */; };
 		147028F0278F211A00D4A106 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147028EF278F211A00D4A106 /* Persistence.swift */; };
 		147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 147028F1278F211A00D4A106 /* Minimu.xcdatamodeld */; };
+		14F610CF279F861B00AD4F20 /* achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = 14F610CE279F861B00AD4F20 /* achieved.json */; };
+		14F610D1279F864100AD4F20 /* Achieved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D0279F864100AD4F20 /* Achieved.swift */; };
+		14F610DA27A1C57200AD4F20 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D927A1C57200AD4F20 /* SheetView.swift */; };
+		14F610DE27A2C09A00AD4F20 /* CustomModalPopups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610DD27A2C09A00AD4F20 /* CustomModalPopups.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		141CDD002791B420003754C9 /* ClutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClutterView.swift; sourceTree = "<group>"; };
 		141CDD022791B447003754C9 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		1429CB272799EEB7002D2686 /* CounterFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFetcher.swift; sourceTree = "<group>"; };
+		1429CB29279C46D1002D2686 /* goal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goal.json; sourceTree = "<group>"; };
+		1429CB2B279C470A002D2686 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		1429CB2D279C47DE002D2686 /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
+		1429CB33279EE74E002D2686 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		143985212796E4C30079CEF8 /* ListDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDay.swift; sourceTree = "<group>"; };
 		143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStateFetcher.swift; sourceTree = "<group>"; };
 		143985252796FF820079CEF8 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
@@ -59,6 +73,10 @@
 		147028ED278F211A00D4A106 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		147028EF278F211A00D4A106 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		147028F2278F211A00D4A106 /* Minimu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Minimu.xcdatamodel; sourceTree = "<group>"; };
+		14F610CE279F861B00AD4F20 /* achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achieved.json; sourceTree = "<group>"; };
+		14F610D0279F864100AD4F20 /* Achieved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achieved.swift; sourceTree = "<group>"; };
+		14F610D927A1C57200AD4F20 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		14F610DD27A2C09A00AD4F20 /* CustomModalPopups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalPopups.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +93,19 @@
 		141CDCFD2791B29D003754C9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1429CB2B279C470A002D2686 /* Goal.swift */,
+				14F610D0279F864100AD4F20 /* Achieved.swift */,
+				1429CB29279C46D1002D2686 /* goal.json */,
+				14F610CE279F861B00AD4F20 /* achieved.json */,
 				147028E6278F211700D4A106 /* MinimuApp.swift */,
 				147028E8278F211700D4A106 /* ContentView.swift */,
 				141CDCFF2791B3E2003754C9 /* Views */,
 				141CDCFE2791B2FF003754C9 /* Componentes */,
 				14399E3927923F6900D455CF /* Extensions */,
 				143985232796F45E0079CEF8 /* OnboardingStateFetcher.swift */,
+				1429CB272799EEB7002D2686 /* CounterFetcher.swift */,
+				1429CB2D279C47DE002D2686 /* ModalData.swift */,
+				1429CB33279EE74E002D2686 /* NotificationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -91,8 +116,8 @@
 				14399E3527922D4F00D455CF /* Checkmarker.swift */,
 				143985212796E4C30079CEF8 /* ListDay.swift */,
 				14399E4A27936F3700D455CF /* InformationCard.swift */,
-				14399E372792348300D455CF /* AchievedCard.swift */,
 				14399E3C2793286100D455CF /* Scroll.swift */,
+				14399E372792348300D455CF /* AchievedCard.swift */,
 				14399E3E2793391200D455CF /* NewDetail.swift */,
 				14399E4627933B1B00D455CF /* OnboardingButton.swift */,
 			);
@@ -111,6 +136,8 @@
 				14399E4227933A4900D455CF /* Onboarding2View.swift */,
 				14399E4427933A5B00D455CF /* Onboarding3View.swift */,
 				144358532795A6AF00CD18B1 /* OnboardingStepsView.swift */,
+				14F610D927A1C57200AD4F20 /* SheetView.swift */,
+				14F610DD27A2C09A00AD4F20 /* CustomModalPopups.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,7 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1429CB2A279C46D1002D2686 /* goal.json in Resources */,
 				147028EE278F211A00D4A106 /* Preview Assets.xcassets in Resources */,
+				14F610CF279F861B00AD4F20 /* achieved.json in Resources */,
 				147028EB278F211A00D4A106 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,18 +266,25 @@
 				147028F0278F211A00D4A106 /* Persistence.swift in Sources */,
 				14399E382792348300D455CF /* AchievedCard.swift in Sources */,
 				14399E3F2793391200D455CF /* NewDetail.swift in Sources */,
+				14F610DE27A2C09A00AD4F20 /* CustomModalPopups.swift in Sources */,
 				144358582795ED5C00CD18B1 /* CardView.swift in Sources */,
 				147028E9278F211700D4A106 /* ContentView.swift in Sources */,
+				14F610D1279F864100AD4F20 /* Achieved.swift in Sources */,
 				14399E41279339F300D455CF /* Onboarding1View.swift in Sources */,
 				14399E4327933A4900D455CF /* Onboarding2View.swift in Sources */,
+				1429CB282799EEB7002D2686 /* CounterFetcher.swift in Sources */,
 				14399E3D2793286100D455CF /* Scroll.swift in Sources */,
+				1429CB34279EE74F002D2686 /* NotificationManager.swift in Sources */,
 				141CDD032791B447003754C9 /* ProcessView.swift in Sources */,
 				14399E4527933A5B00D455CF /* Onboarding3View.swift in Sources */,
+				1429CB2C279C470A002D2686 /* Goal.swift in Sources */,
 				14399E4727933B1B00D455CF /* OnboardingButton.swift in Sources */,
 				14399E3627922D4F00D455CF /* Checkmarker.swift in Sources */,
 				147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */,
 				143985242796F45E0079CEF8 /* OnboardingStateFetcher.swift in Sources */,
+				14F610DA27A1C57200AD4F20 /* SheetView.swift in Sources */,
 				147028E7278F211700D4A106 /* MinimuApp.swift in Sources */,
+				1429CB2E279C47DE002D2686 /* ModalData.swift in Sources */,
 				143985222796E4C30079CEF8 /* ListDay.swift in Sources */,
 				14399E3B27923F8900D455CF /* ColorExtension.swift in Sources */,
 			);
@@ -398,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,7 +463,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

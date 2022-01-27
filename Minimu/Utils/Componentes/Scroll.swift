@@ -7,35 +7,46 @@
 
 import SwiftUI
 
+//var achieves:
+//struct Achieved {
+//    var id: Int
+//    let title: String
+//    let imageName: String
+//}
 struct Scroll: View {
-    let data = Array(1...5).map {"\($0)"}
+
+    
     let layout = [
         GridItem(.flexible()),
         GridItem(.flexible()),
     ]
     
+  //  @State var blocked: Bool = false
+    var achieves:[Achieved] {
+            @State var data: [Achieved] = modalData.achieves
+                    return data
+            }
+    @StateObject var modalData = ModalData()
+     var counterFetcher = CounterFetcher()
+  
+ //   var counterFetcher : CounterFetcher
     var body: some View {
-      
-//        ScrollView(.horizontal, showsIndicators: false) {
-//
-//            LazyHGrid(rows: [GridItem(.fixed(0))], spacing: 25) {
-//                ForEach(0...5, id: \.self) { item in
-//                    AchievedCard(imageName: "checkMark", text: "oiiii")
-//
-//                }
-//            }
-//
-//        } //.frame(height: 220)
-//        .frame(width: 350, height: 220, alignment: .center)
-//        .ignoresSafeArea()
-        
         ScrollView{
+            Spacer()
+            //aquiiii
             LazyVGrid(columns: layout, spacing: 40) {
-                ForEach(data, id: \.self) { item in
-                AchievedCard(imageName: "check", text: "oiiii")
+                ForEach(achieves, id: \.self) { archi in
+                    if counterFetcher.counter >= archi.valor{
+                        AchievedCard(achieves: archi, counterFetcher: counterFetcher).opacity(1)
+                    } else {
+                        AchievedCard(achieves: archi, counterFetcher: counterFetcher).opacity(0.4)
+                        
+                    }
                 }
             }
+            
         }
+        
     }
 }
 
@@ -44,3 +55,7 @@ struct Scroll_Previews: PreviewProvider {
         Scroll()
     }
 }
+//if counterFetcher == 3 {
+//
+//}
+

@@ -8,74 +8,45 @@
 import SwiftUI
 
 struct ListDay: View {
-  //  @Environment(\.dismiss) private var dismiss
-    
-    @Binding var selectedCategory: String
-    
-    var categories: [String]
-    
-        
-        var body: some View {
-            List {
-                ForEach(0..<categories.count) { item in
-                    Button {
-                        self.selectedCategory = self.categories[item]
-                       // self.dismiss()
-                    } label: {
-                        HStack {
-                            Text(categories[item])
-                                .foregroundColor(Color.primary)
-                            Spacer()
-                            if categories[item] == selectedCategory {
-                                Image(systemName: "checkmark")
-                                    .foregroundColor(.gray)
-                            }
-                        }
+    @State var items: [String] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"]
+    @State var selections: [String] = []
+    @State private var notificationManager = NotificationManager()
+
+    var body: some View {
+        List {
+            ForEach(self.items, id: \.self) { item in
+                MultipleSelectionRow(title: item, isSelected: self.selections.contains(item)) {
+                    if self.selections.contains(item) {
+                        self.selections.removeAll(where: { $0 == item })
+                    }
+                    else {
+                        self.selections.append(item)
                     }
                 }
             }
-            
         }
     }
-        
-//        List {
-//            NavigationLink(destination: CategoryView(selectedCategory: $itemCategory, categories: ["Alimentos", "Remédios", "Higiene", "Outros"])) {
-//                HStack{
-//                    Text("Categoria")
-//                        .foregroundColor(.primary)
-//
-//                    Spacer()
-//
-//                    Text("\(itemCategory)")
-//                        .foregroundColor(.secondary)
-//                }
-//            }
-//
-//            if (itemCategory != "Outros" && itemCategory != "" && postType == "Doação") {
-//                DatePicker(
-//                    "Validade",
-//                    selection: $itemExpirationDate,
-//                    displayedComponents: .date
-//                )
-//            }
-//        }
-//
-//
-//        NavigationLink(destination: CategoryView(selectedCategory: $organizationZipCode, categories: ["Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins", "Distrito Federal"])) {
-//
-//            HStack {
-//                Text("Estado da organização")
-//                Spacer()
-//                Text("\(organizationZipCode)")
-//                    .foregroundColor(.secondary)
-//            }
-//        }
-        
-        
-   
-
+}
 struct ListDay_Previews: PreviewProvider {
     static var previews: some View {
-        ListDay(selectedCategory: .constant(""), categories: ["ONG", "Protetor Independente", "Loja", "Fornecedor"])
+        ListDay()
+    }
+    
+}
+struct MultipleSelectionRow: View {
+    var title: String
+    var isSelected: Bool
+    var action: () -> Void
+    
+    var body: some View {
+        Button(action: self.action) {
+            HStack {
+                Text(self.title)
+                if self.isSelected {
+                    Spacer()
+                    Image(systemName: "checkmark")
+                }
+            }
+        }
     }
 }

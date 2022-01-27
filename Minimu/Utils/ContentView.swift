@@ -16,16 +16,16 @@ struct ContentView: View {
     
     var body: some View {
         if onboardingStateFetcher.onboardingState == true {
-            
+           
             TabView {
                 ClutterView()
                     .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "brain.head.profile")
                     Text("Clutter")
                     }
                 ProcessView()
                     .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "puzzlepiece.extension")
                     Text("Process")
                     }
             }
