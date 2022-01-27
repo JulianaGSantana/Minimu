@@ -10,7 +10,7 @@ import SwiftUI
 struct SheetView: View {
     @State var selectedNumber: Int
     let guardar = UserDefaults.standard
-    @State var somatorio: Int
+    @State private var somatorio: Int = UserDefaults.standard.integer(forKey: "resultadoTotal")
 
     var counterFetcher : CounterFetcher
         @Environment(\.dismiss) var dismiss
@@ -43,6 +43,7 @@ struct SheetView: View {
                         itensDiscard()
                         dismiss()
                         
+                        
                     }){
                         Text("Done")
                         //  showOnBoarding.toggle()
@@ -69,7 +70,7 @@ struct SheetView: View {
     
     func itensDiscard() {
         print("\(selectedNumber)")
-        somatorio = somatorio + selectedNumber
+        somatorio += selectedNumber
         guardar.set(selectedNumber, forKey: "somando")
         guardar.set(somatorio, forKey: "resultadoTotal")
         print("\(somatorio)")

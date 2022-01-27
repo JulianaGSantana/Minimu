@@ -13,6 +13,7 @@ import CoreData
 struct ContentView: View {
  //   @AppStorage("OnboardingStepsView")  var OnboardingStepsViewShowing = true
     @StateObject var onboardingStateFetcher = OnboardingStateFetcher()
+   
     
     var body: some View {
         if onboardingStateFetcher.onboardingState == true {

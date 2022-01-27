@@ -8,27 +8,14 @@
 import SwiftUI
 
 struct CustomModalPopups: View {
-    @State private var showingModal = false
+    @State var showingModal = true
     
     var body: some View {
-        ZStack {
-            VStack(spacing: 20) {
-             
-                Button(action: {
-                    self.showingModal = true
-                }) {
-                    Text("Show popup")
-                }
-                Spacer()
-            }
-            
-            // The Custom Popup is on top of the screen
-            if $showingModal.wrappedValue {
-                // But it will not show unless this variable is true
+//
+           if $showingModal.wrappedValue {
+//
                 ZStack {
-                    Color.black.opacity(0.4)
-                        .edgesIgnoringSafeArea(.vertical)
-                    // This VStack is the popup
+           
                     VStack() {
                         Spacer()
                         Spacer()
@@ -61,8 +48,8 @@ struct CustomModalPopups: View {
                 }
             }
         }
-    }
-}
+   }
+//}
 struct CustomModalPopups_Previews: PreviewProvider {
     static var previews: some View {
         CustomModalPopups()
