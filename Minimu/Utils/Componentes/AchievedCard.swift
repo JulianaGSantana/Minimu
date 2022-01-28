@@ -38,7 +38,7 @@ struct AchievedCard: View {
                 }
                 .frame(width: 150, height: 200, alignment: .center)
               //  .frame(idealWidth: 150, maxWidth: .infinity, idealHeight: 200, maxHeight: .infinity, alignment: .center)
-             //   .frame(minWidth: 150, idealWidth: 150, maxWidth: .infinity, minHeight: 200, idealHeight: 200, maxHeight: .infinity, alignment: .center)
+              //  .frame(minWidth: 150, idealWidth: 150, maxWidth: .infinity, idealHeight: 200, alignment: .center)
               //  .padding(.leading)
               //  .padding(.trailing)
             }.background(Color .cardColor)

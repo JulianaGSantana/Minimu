@@ -34,7 +34,7 @@ struct Scroll: View {
         ScrollView{
             Spacer()
             //aquiiii
-            LazyVGrid(columns: layout, spacing: 40) {
+            LazyVGrid(columns: layout, spacing: 30) {
                 ForEach(achieves, id: \.self) { archi in
                     if counterFetcher.counter >= archi.valor{
                         AchievedCard(achieves: archi, counterFetcher: counterFetcher).opacity(1)

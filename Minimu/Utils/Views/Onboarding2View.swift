@@ -64,7 +64,7 @@ struct Onboarding2View: View {
                 Text("How do I use technology and social media?")
                     .font(.body)
                     .foregroundColor(.secondary)
-                    .frame(width: 300, alignment: .leading)
+                    //.frame(width: 300, alignment: .leading)
                     .padding()
                     .padding()
                 

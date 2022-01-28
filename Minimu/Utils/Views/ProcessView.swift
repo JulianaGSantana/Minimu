@@ -39,7 +39,7 @@ struct ProcessView: View {
                         
                         HStack{
                             if counterFetcher.counter >= 36{
-                                Text("acabou!")
+                                Text("You reached the end!")
                                     .font(.title3.bold())
                                     .padding(.leading)
                             } else {
@@ -112,12 +112,14 @@ struct ProcessView: View {
                             .padding(.leading)
                             
                     }
-                        
+                       
+                          
                         if socorro() {
                             CustomModalPopups().padding()
                         }
+                            
                         }
-                        Scroll(counterFetcher: counterFetcher)
+                        Scroll(counterFetcher: counterFetcher).padding(.trailing)
                     
                     }.navigationTitle("Process")
                        
