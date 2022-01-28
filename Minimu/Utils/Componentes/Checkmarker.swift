@@ -42,6 +42,7 @@ struct Checkmarker: View {
             }
         }  .background(Color .cardColor)
             .cornerRadius(13)
+            .frame( maxWidth: .infinity, maxHeight: .infinity)
         
             .shadow(radius: 4)
             .padding()

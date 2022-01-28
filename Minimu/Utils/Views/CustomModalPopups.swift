@@ -9,17 +9,18 @@ import SwiftUI
 
 struct CustomModalPopups: View {
     @State var showingModal = true
+    let data = UserDefaults.standard.integer(forKey: "resultadoTotal")
     
     var body: some View {
 //
            if $showingModal.wrappedValue {
 //
                 ZStack {
-           
+                    
                     VStack() {
                         Spacer()
                         Spacer()
-                        Text("You already let go of 100 things!")
+                        Text("You already let go of \(data) things!")
                             .font(.title3)
                             .fontWeight(.bold)
                             .foregroundColor(.primary)
@@ -38,14 +39,17 @@ struct CustomModalPopups: View {
                         }) {
                             Text("Yeah!")
                         }.padding()
-                    }  .padding(.leading,5)
-                        .padding(.trailing,5)
+                    }  .padding(.leading,8)
+                        .padding(.trailing,8)
                     //    .padding(.top,10)
                     .frame(width: 300, height: 240)
-                    
+                   
                     .background(Color.cardColor)
                     .cornerRadius(20).shadow(radius: 20)
                 }
+              
+             
+               
             }
         }
    }

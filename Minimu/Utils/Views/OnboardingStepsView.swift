@@ -15,8 +15,8 @@ struct OnboardingStepsView: View {
 //        TabView (selection: $selection)
         TabView (){
             Onboarding1View() .tag(0)
-            Onboarding2View() .tag(1)
-            Onboarding3View(onboardingStateFetcher: onboardingStateFetcher) .tag(3)
+            Onboarding2View(onboardingStateFetcher: onboardingStateFetcher) .tag(1)
+          //  Onboarding3View(onboardingStateFetcher: onboardingStateFetcher) .tag(3)
         } .tabViewStyle(.page(indexDisplayMode: .always))
             .background(Color.backgroundColorGrey)
             .onAppear {setupAppearance()}

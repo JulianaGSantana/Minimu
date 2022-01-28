@@ -13,22 +13,22 @@ struct ProcessView: View {
     @StateObject var counterFetcher = CounterFetcher()
     @StateObject var counterFive = CounterFetcherFive()
     //soma
-   
     //popup
     @State var showingModal = false
-    
     //modal nova
     @State private var showingSheet = false
-  
    // onboarding
     @State var showSheet: Bool = false
+    //let data = UserDefaults.standard.integer(forKey: "resultadoTotal")
     
     var body: some View {
         NavigationView{
             ScrollView(.vertical) {
                 ZStack {
+                    VStack{
+                        ZStack{
                     VStack(alignment:.leading){
-        
+                       
                         Text("Goal")
                             .font(.title.bold())
                             .padding(.leading)
@@ -81,15 +81,15 @@ struct ProcessView: View {
     //
                                 showingSheet.toggle()
                                 //counterFive.saveCounterToUserDefault(counterFive.counter + 1)
-
                             }
 
                          .sheet(isPresented: $showingSheet) {
                                SheetView(selectedNumber: 5, counterFetcher: counterFetcher)
             }
-                            
                         }
                         
+//                        InformationCard(inf: "Things that discard \(data)")
+//                            .font(.subheadline)
                         
         
                         Text("Achievements")
@@ -99,23 +99,27 @@ struct ProcessView: View {
                         Text("Achieved")
                             .font(.title3.bold())
                             .padding(.leading)
+                            
+                    }
+                        
+                        if socorro() {
+                            CustomModalPopups().padding()
+                        }
+                        }
                         Scroll(counterFetcher: counterFetcher)
                     
                     }.navigationTitle("Process")
-                    if socorro() {
+                    
+                  
 
-                        CustomModalPopups().padding(.top,-500)
-                     //      .frame( maxWidth: .infinity, minHeight: 200, maxHeight: 200)
-                    }
                     
                 }
-            
+                  
                 
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .background(Color.backgroundColorGrey)
-   
-        } 
+           }
     }
     
     func socorro() -> Bool{

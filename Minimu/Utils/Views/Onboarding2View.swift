@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Onboarding2View: View {
   @State private var isPresenting = false
+    var onboardingStateFetcher = OnboardingStateFetcher()
 //    @Binding var showSheetView: Bool
  //   @Environment(\.presentationMode) var presentationMode
     var body: some View {
@@ -67,7 +68,24 @@ struct Onboarding2View: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: Onboarding3View(), isActive: $isPresenting){ EmptyView()}
+                Spacer()
+                Button(action: {
+                    changeOnboardingState()
+                }) {
+                    Text("Continue")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .frame(width: 350, height: 60)
+                        .background(Color.blue)
+                        .cornerRadius(15)
+                    //  .padding(.top, 0)
+                        .padding(.bottom,40)
+                }
+        
+            }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
+         
+                
+             //   NavigationLink(destination: Onboarding3View(), isActive: $isPresenting){ EmptyView()}
                 
 //                Button(action: {
 //                    isPresenting = true
@@ -88,8 +106,12 @@ struct Onboarding2View: View {
             .background(Color.backgroundColorGrey) .ignoresSafeArea(.all)
     //     .navigationBarHidden(true)
            //     .navigationBarBackButtonHidden(true)
-            
+    
         }   // .padding()
+ //   }
+    
+    func changeOnboardingState() {
+        self.onboardingStateFetcher.changingOnboardingState()
     }
     
 }
