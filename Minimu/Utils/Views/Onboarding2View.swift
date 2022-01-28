@@ -45,9 +45,11 @@ struct Onboarding2View: View {
                 
                 Text("Minimalism is about thinking and not just getting rid of items")
                     .font(.title2.bold())
-                    .frame(width: 350, alignment: .center)
-                    .padding()
-                    .padding()
+                   // .frame(alignment: .center)
+                    //.padding()
+                    //.padding()
+                    .padding(.trailing)
+                    .padding(.leading)
                 
                 
                 
@@ -60,7 +62,7 @@ struct Onboarding2View: View {
                     .padding(.trailing,30)
                 
                 Text("How do I use technology and social media?")
-                    .font(.title3)
+                    .font(.body)
                     .foregroundColor(.secondary)
                     .frame(width: 300, alignment: .leading)
                     .padding()
@@ -103,7 +105,10 @@ struct Onboarding2View: View {
 //                }
                 
             } 
-            .background(Color.backgroundColorGrey) .ignoresSafeArea(.all)
+            .background(Color.backgroundColorGrey)
+            .ignoresSafeArea(.all)
+           
+        
     //     .navigationBarHidden(true)
            //     .navigationBarBackButtonHidden(true)
     

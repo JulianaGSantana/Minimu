@@ -1,85 +1,97 @@
 [
     {
         "id": 37,
-        "title": "Achieved1", 
+        "title": "Baby Step",
         "imageName": "calca",
+        "text": "3 complete task",
         "valor": 3
     },
 
     {
         "id": 38,
-        "title": "Achieved2", 
-        "imageName": "raquete",
-        "valor": 6
+        "title": "Frog foot",
+        "imageName": "tenis",
+        "text": "Let go of tennis",
+        "valor": 5
     },
 
     {
         "id": 39,
-        "title": "Achieved3", 
+        "title": "Little  Grasshopper",
         "imageName": "presente",
-        "valor": 9
+        "text": "10 tasks completed",
+        "valor": 10
     },
 
     {
         "id": 40,
-        "title": "Achieved4", 
+        "title": "Fresh air",
         "imageName": "privada",
+        "text": "Complete the Bathroom clean",
         "valor": 12
     },
    
     {
         "id": 41,
-        "title": "cndscjdsj", 
+        "title": "Essencial",
         "imageName": "natal",
+        "text": "Keep only the essentials",
         "valor": 15
     },
 
     {
         "id": 42,
-        "title": "cndscjdsj", 
+        "title": "Bye pens", 
         "imageName": "caneta",
+        "text": "Only what works",
         "valor": 18
     },
 
     {
         "id": 43,
-        "title": "cndscjdsj", 
+        "title": "Ho Ho Ho",
         "imageName": "meia",
+        "text": "Christmas spirit",
         "valor": 21
     },
 
     {
         "id": 44,
-        "title": "cndscjdsj", 
+        "title": "Throw away",
         "imageName": "check",
+        "text": "-10",
         "valor": 24
     },
 
     {
         "id": 45,
-        "title": "cndscjdsj", 
+        "title": "Unpack",
         "imageName": "medalha",
-        "valor": 27
+        "text": "Complete the material clean",
+        "valor": 28
     },
 
     {
         "id": 46,
-        "title": "cndscjdsj", 
+        "title": "No more ads",
         "imageName": "email",
+        "text": "Clean email",
         "valor": 30
     },
 
     {
         "id": 47,
-        "title": "cndscjdsj", 
+        "title": "Free memory",
         "imageName": "lixeira",
-        "valor": 33
+        "text": "Complete the Digital pillar",
+        "valor": 34
     },
 
     {
         "id": 48,
-        "title": "cndscjdsj", 
+        "title": "The real ones",
         "imageName": "coracao",
+        "text": "Complete the relational cleanse",
         "valor": 36
     }
 ]

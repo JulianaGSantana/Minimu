@@ -30,8 +30,13 @@ struct AchievedCard: View {
                         .font(.headline)
                       //  .font(.subheadline)
                         .foregroundColor(.secondary)
+                       
+                    
+                    Text(self.achieves.text)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
                 }
-                .frame(width: 150, height: 200)
+                .frame(width: 150, height: 200, alignment: .center)
 
             }.background(Color .cardColor)
             //  .shadow(radius: 4)

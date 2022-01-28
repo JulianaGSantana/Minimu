@@ -20,7 +20,8 @@ struct ProcessView: View {
    // onboarding
     @State var showSheet: Bool = false
     //totalDeItens
-    var data = UserDefaults.standard.integer(forKey: "resultadoTotal")
+   // var data = UserDefaults.standard.integer(forKey: "resultadoTotal")
+    @AppStorage("resultadoTotal") var data: Int = 0
     
     var body: some View {
         NavigationView{
