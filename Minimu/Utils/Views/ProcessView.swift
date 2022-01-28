@@ -10,7 +10,7 @@ import SwiftUI
 struct ProcessView: View {
     @State var showSheetView = false
     @StateObject var modalData = ModalData()
-    @StateObject var counterFetcher = CounterFetcher()
+     var counterFetcher = CounterFetcher()
     @StateObject var counterFive = CounterFetcherFive()
     //soma
     //popup
@@ -24,6 +24,7 @@ struct ProcessView: View {
     @AppStorage("resultadoTotal") var data: Int = 0
     
     var body: some View {
+        GeometryReader { bounds in
         NavigationView{
             ScrollView(.vertical) {
                 ZStack {
@@ -119,7 +120,7 @@ struct ProcessView: View {
                         Scroll(counterFetcher: counterFetcher)
                     
                     }.navigationTitle("Process")
-                    
+                       
                   
 
                     
@@ -129,7 +130,9 @@ struct ProcessView: View {
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .background(Color.backgroundColorGrey)
-           }
+                
+           } .navigationViewStyle(StackNavigationViewStyle())
+        }
     }
     
     func socorro() -> Bool{

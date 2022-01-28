@@ -13,18 +13,19 @@ import CoreData
 struct ContentView: View {
  //   @AppStorage("OnboardingStepsView")  var OnboardingStepsViewShowing = true
     @StateObject var onboardingStateFetcher = OnboardingStateFetcher()
-   
+    @StateObject var counterFetcher = CounterFetcher()
     
     var body: some View {
         if onboardingStateFetcher.onboardingState == true {
            
             TabView {
-                ClutterView()
+             
+                ClutterView(counterFetcher: counterFetcher)
                     .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("Clutter")
                     }
-                ProcessView()
+                ProcessView(counterFetcher: counterFetcher)
                     .tabItem {
                     Image(systemName: "puzzlepiece.extension")
                     Text("Process")

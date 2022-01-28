@@ -22,7 +22,7 @@ struct ClutterView: View {
                     return data
             }
     @StateObject var modalData = ModalData()
-    @StateObject var counterFetcher = CounterFetcher()
+     var counterFetcher = CounterFetcher()
   
         let columns = [
             GridItem(.flexible()),
