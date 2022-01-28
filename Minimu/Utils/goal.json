@@ -62,7 +62,7 @@
         "minType":  "Material Minimalism",
         "typesubcategory": "Wardrobe",
         "frase": "Bored, stained or very old bedding that are in poor condition",
-        "clutterImage": "check"
+        "clutterImage": "almofada"
     },
     
     {
@@ -263,7 +263,7 @@
         "minType":  "Digital Minimalism",
         "typesubcategory": "Files",
         "frase": "View your cell phone photo album and see prints or images that are taking up space.",
-        "clutterImage": "lixeira"
+        "clutterImage": "camera"
     },
      
     {

@@ -38,10 +38,10 @@ struct ClutterView: View {
               
                 if counterFetcher.counter >= 36 {
                     
-                    Image("raquete")
+                    Image("cerebro")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100, height: 100, alignment: .center)
+                        .frame(width: 210, height: 150, alignment: .center)
                         .padding(.top, 300)
                     
                 } else {

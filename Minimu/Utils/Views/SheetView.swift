@@ -18,6 +18,12 @@ struct SheetView: View {
         var body: some View {
             NavigationView {
                 VStack{
+                    Image("saco")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 120, height: 120)
+                        .padding()
+                    
                     Text("How many items did you manage to discard?")
                         .font(.title2.bold())
                         .frame(width: 350, alignment: .center)

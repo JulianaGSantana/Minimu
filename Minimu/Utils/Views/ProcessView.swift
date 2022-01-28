@@ -19,7 +19,8 @@ struct ProcessView: View {
     @State private var showingSheet = false
    // onboarding
     @State var showSheet: Bool = false
-    //let data = UserDefaults.standard.integer(forKey: "resultadoTotal")
+    //totalDeItens
+    var data = UserDefaults.standard.integer(forKey: "resultadoTotal")
     
     var body: some View {
         NavigationView{
@@ -32,6 +33,7 @@ struct ProcessView: View {
                         Text("Goal")
                             .font(.title.bold())
                             .padding(.leading)
+
                         
                         HStack{
                             if counterFetcher.counter >= 36{
@@ -60,7 +62,7 @@ struct ProcessView: View {
                         }
                        
                         if counterFetcher.counter >= 36{
-                            Text("em breve terá mais")
+                            Text("Coming Soon new tasks")
                                 .font(.headline)
                                 .foregroundColor(Color.secondary)
                                 .padding(.leading)
@@ -88,14 +90,21 @@ struct ProcessView: View {
             }
                         }
                         
-//                        InformationCard(inf: "Things that discard \(data)")
-//                            .font(.subheadline)
-                        
+                        Text( "Things that you already discard: \(data)")
+                         
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .foregroundColor(.secondary)
+
+
+                        Spacer()
         
                         Text("Achievements")
                             .font(.title.bold())
                             .padding(.leading)
                         
+                    
                         Text("Achieved")
                             .font(.title3.bold())
                             .padding(.leading)

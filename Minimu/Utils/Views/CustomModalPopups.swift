@@ -10,6 +10,9 @@ import SwiftUI
 struct CustomModalPopups: View {
     @State var showingModal = true
     let data = UserDefaults.standard.integer(forKey: "resultadoTotal")
+    //teste
+    @StateObject var counterFive = CounterFetcherFive()
+    let yeah = UserDefaults.standard.bool(forKey: "yeah")
     
     var body: some View {
 //
@@ -36,6 +39,7 @@ struct CustomModalPopups: View {
                      
                         Button(action: {
                             self.showingModal = false
+                         
                         }) {
                             Text("Yeah!")
                         }.padding()
