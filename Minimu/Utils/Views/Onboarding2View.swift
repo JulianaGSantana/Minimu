@@ -66,7 +66,8 @@ struct Onboarding2View: View {
                     .foregroundColor(.secondary)
                     //.frame(width: 300, alignment: .leading)
                     .padding()
-                    .padding()
+                    .padding(.trailing)
+                   
                 
                 Spacer()
                 

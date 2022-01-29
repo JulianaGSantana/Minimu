@@ -9,7 +9,7 @@
 
     {
         "id": 38,
-        "title": "Warrior",
+        "title": "Happy feet",
         "imageName": "tenis",
         "text": "Let go of tennis",
         "valor": 5
@@ -33,7 +33,7 @@
    
     {
         "id": 41,
-        "title": "Essencial",
+        "title": "Save the trees",
         "imageName": "natal",
         "text": "Keep only the essentials",
         "valor": 15
@@ -51,7 +51,7 @@
         "id": 43,
         "title": "Ho Ho Ho",
         "imageName": "meia",
-        "text": "Christmas spirit",
+        "text": "Conscious christmas spirit",
         "valor": 21
     },
 

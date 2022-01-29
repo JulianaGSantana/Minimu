@@ -42,16 +42,16 @@ struct InformationView: View {
                         .font(.body)
                         .padding(.trailing)
                     
-                    InformationCard(inf:"Material: \n We often have several 'visible junk' that take up space and that can be disposable and that we are paying for it, because everything that takes up space has a cost. It is necessary to raise the reflection: What is the function of this? ")
+                    InformationCard(inf:"Material: \n We often have several 'visible junk' that take up space and can be disposable. We are paying for it because everything that takes up space has a cost, so it's necessary to raise the reflection: What is the function of this?")
                         .font(.body)
                         .padding(.trailing)
                     
-                    InformationCard(inf:"Digital: \n In this era of excess information, we feel obliged to be on top of everything and FoMO (fear of missing out) happens. We need to think about our focuses in life. With that, we managed to get a lot out of that thought of always being tuned in to everything.")
+                    InformationCard(inf:"Digital: \n In this era of excess information, we feel obliged to be on top of everything and FOMO (fear of missing out) happens. We need to think about our focus in life. With that, we managed to get a lot out of that thought of always being tuned in to everything.")
                         .font(.body)
                         .padding(.trailing)
                     
                     
-                    InformationCard(inf:"Mental: \n When turning on the TV, being on social media, reading false information, are often intentions that are not good for us, that do not concern our own lives. It stays in our mind, taking up space and causing worries and our mind becomes a garbage dump.")
+                    InformationCard(inf:"Mental: \n When turning on the TV, being on social media, reading false information are often intentions that are not good for us, that do not concern our own lives. It stays in our mind, taking up space and causing worries, so our mind becomes a garbage dump.")
                         .font(.body)
                         .padding(.trailing)
                     
