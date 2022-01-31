@@ -65,9 +65,10 @@ struct ClutterView: View {
                             
                         }
                     }
+                } .background(Color.backgroundColorGrey)
                 }
-                }
-            } .background(Color.backgroundColorGrey)
+            }
+              //  .frame(width: .infinity, height: .infinity)
         }
 }
 
