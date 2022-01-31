@@ -33,6 +33,7 @@ struct ClutterView: View {
 
         var body: some View {
             ScrollView {
+                VStack{
                 Spacer()
                 Spacer()
               
@@ -65,10 +66,12 @@ struct ClutterView: View {
                             
                         }
                     }
-                } .background(Color.backgroundColorGrey)
                 }
-            }
-              //  .frame(width: .infinity, height: .infinity)
+                }
+                }
+            }  .frame(maxWidth: .infinity)
+                .background(Color.backgroundColorGrey)
+             
         }
 }
 
