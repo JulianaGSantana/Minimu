@@ -132,6 +132,7 @@ struct ProcessView: View {
             }  .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .background(Color.backgroundColorGrey)
+            
                 
            } .navigationViewStyle(StackNavigationViewStyle())
         }
