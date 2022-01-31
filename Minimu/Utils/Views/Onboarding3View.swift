@@ -16,32 +16,49 @@ struct Onboarding3View: View {
     var body: some View {
        // ScrollView{
         VStack{
-            //       Spacer()
+          
             Spacer()
-            Text("Notification frequency")
-                .fontWeight(.heavy)
-                .font(.system(size: 35))
-                .frame(width: 300, alignment: .center)
-                .padding()
             
-            Text("Going minimalist is an ongoing process, so the need for notifications is essential. How often would you like to do this process?")
-            //   .frame(width: 350, alignment: .leading)
-                .padding()
+            Text("How it works")
+                .font(.title2.bold())
+                             .font(.system(size: 35))
+                             .frame(width: 300, alignment: .center)
+                             .padding()
             
-            Section() {
-                Picker(selection: $selectedFrequency) {
-                    Text("Daily").tag("Daily")
-                    
-                    Text("Weekly").tag("Weekly")
-                } label: {
-                    Text("Picker")
-                }
-                .pickerStyle(SegmentedPickerStyle())
-            } .padding()
-            //      }
-            if (selectedFrequency == "Weekly"){
-                ListDay()
-            }
+            Text("With tasks that can be completed as often as you want, you go through a process of becoming minimalist in the main pillars.\n \n On the main page you will find all the items you have and with each completed task it will disappear!")
+//            until your mind is clear and waiting for new challenges. And there are also achievements!
+             //   .frame(width: .infinity, alignment: .center)
+                .padding()
+                .foregroundColor(.secondary)
+            
+            Image("onboardingImage")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 140, height: 230, alignment: .center)
+//            Text("Notification frequency")
+//                .fontWeight(.heavy)
+//                .font(.system(size: 35))
+//                .frame(width: 300, alignment: .center)
+//                .padding()
+//
+//            Text("Going minimalist is an ongoing process, so the need for notifications is essential. How often would you like to do this process?")
+//
+//                .padding()
+//
+//            Section() {
+//                Picker(selection: $selectedFrequency) {
+//                    Text("Daily").tag("Daily")
+//
+//                    Text("Weekly").tag("Weekly")
+//                } label: {
+//                    Text("Picker")
+//                }
+//                .pickerStyle(SegmentedPickerStyle())
+//            } .padding()
+//
+//            if (selectedFrequency == "Weekly"){
+//                ListDay()
+//            }
             
             Spacer()
             Button(action: {

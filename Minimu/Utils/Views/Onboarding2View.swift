@@ -72,18 +72,18 @@ struct Onboarding2View: View {
                 Spacer()
                 
                 Spacer()
-                Button(action: {
-                    changeOnboardingState()
-                }) {
-                    Text("Continue")
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .frame(width: 350, height: 60)
-                        .background(Color.blue)
-                        .cornerRadius(15)
-                    //  .padding(.top, 0)
-                        .padding(.bottom,40)
-                }
+//                Button(action: {
+//                    changeOnboardingState()
+//                }) {
+//                    Text("Continue")
+//                        .foregroundColor(.white)
+//                        .font(.headline)
+//                        .frame(width: 350, height: 60)
+//                        .background(Color.blue)
+//                        .cornerRadius(15)
+//                    //  .padding(.top, 0)
+//                        .padding(.bottom,40)
+//                }
         
             }  .background(Color.backgroundColorGrey) .ignoresSafeArea()
          
@@ -116,9 +116,9 @@ struct Onboarding2View: View {
         }   // .padding()
  //   }
     
-    func changeOnboardingState() {
-        self.onboardingStateFetcher.changingOnboardingState()
-    }
+//    func changeOnboardingState() {
+//        self.onboardingStateFetcher.changingOnboardingState()
+//    }
     
 }
 struct Onboarding2View_Previews: PreviewProvider {
