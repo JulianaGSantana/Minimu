@@ -1,0 +1,38 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  },
+  "stickers" : [
+    {
+      "filename" : "mini1.sticker"
+    },
+    {
+      "filename" : "mini2.sticker"
+    },
+    {
+      "filename" : "mini3.sticker"
+    },
+    {
+      "filename" : "mini4.sticker"
+    },
+    {
+      "filename" : "mini6.sticker"
+    },
+    {
+      "filename" : "mini5.sticker"
+    },
+    {
+      "filename" : "mini7.sticker"
+    },
+    {
+      "filename" : "mini8.sticker"
+    },
+    {
+      "filename" : "mini9.sticker"
+    }
+  ]
+}
