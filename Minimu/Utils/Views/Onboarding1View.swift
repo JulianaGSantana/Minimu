@@ -17,17 +17,17 @@ struct Onboarding1View: View {
             
             VStack {
                 Spacer()
-                Text("Hi!")
+                Text("Hi!".localized())
                     .fontWeight(.heavy)
                     .font(.system(size: 35))
                     .frame(width: 300, alignment: .center)
                 
                 
                 VStack(alignment: .leading) {
-                    NewDetail(image: "jornal", title: "Understand minimalism", description: "Being minimalist is a process of reflection.")
-                    NewDetail(image: "check", title: "Start your detachment process", description: "With small periodic tasks, you'll start to sort out items or actions that don't make you happy.")
+                    NewDetail(image: "jornal", title: "Understand minimalism", description: "Being minimalist is a process of reflection.".localized())
+                    NewDetail(image: "check", title: "Start your detachment process", description: "With small periodic tasks, you'll start to sort out items or actions that don't make you happy.".localized())
 //                    NewDetail(image: "mensagem", title: "Receive notifications", description: "So you never forget to meet the goals  on the chosen days.")
-                    NewDetail(image: "caixa", title: "See results", description: "At the end of each stage you will see how many items you managed to let go of.")
+                    NewDetail(image: "caixa", title: "See results", description: "At the end of each stage you will see how many items you managed to let go of.".localized())
                 }
                 .padding(.trailing)
                 Spacer()

@@ -1,0 +1,140 @@
+
+//quando acaba
+"You reached the end!" = "Você chegou ao fim!";
+"Coming Soon new tasks" = "Em breve novas tarefas";
+"Things that you already discard:" = "Coisas que já se desapegou:";
+
+//sheetview
+"How many items did you manage to discard?" = "Quantos itens já se desapegou?";
+
+//information
+"About"= "Sobre";
+
+"'Minimalism is a behavior that makes people more important than the things they have.'\nMinimalism: A Documentary About the Important Things" = "'O minimalismo é um comportamento que torna pessoas mais importantes que as coisas que elas têm.'\nMinimalism: A Documentary About the Important Things";
+
+"Questions for help" = "Perguntas para te ajudar";
+"Does this item add value to my life?           \nDoes this spark joy? \n How often do I use this item? \nHow does this add value to my life? \nHow does this help me live the life I want most?" = "Esse item adiconar valor a minha vida?          \nIsso me traz alegria? \n Com que frequência uso esse item? \nComo isso adiciona valor a minha vida? \nComo isso me ajuda a alcançar o que quero alcançar?";
+"Pillars" = "Pilares";
+"To start this journey, we will start by minimizing the material items, so that we can then explore other areas such as digital, mental, temporal and relational." = "Para começar essa jornada, começarem minimizando itens, para depois explorarmos outras áreas como digital, mental, temporal e relational";
+"Material: \n We often have several 'visible junk' that take up space and can be disposable. We are paying for it because everything that takes up space has a cost, so it's necessary to raise the reflection: What is the function of this?" = "Físico: \n Muitas vezes temos várias 'tralhas visíveis que ocupam espaço e que podem ser descartáveis e que estamos pagando por isso,  pois tudo que pega espaço tem um custo. Sendo necessário levantar a reflexão: Qual a função disso?";
+"Digital: \n In this era of excess information, we feel obliged to be on top of everything and FOMO (fear of missing out) happens. We need to think about our focus in life. With that, we managed to get a lot out of that thought of always being tuned in to everything." = "Digital: \n Nessa era de excesso de informações nos sentimos obrigados a estar por dentro de tudo e acontece o FoMO ( fear of missing out). Precisamos pensar em nossos focos da vida. Com isso conseguimos tirar muito esse pensamento de ficar sempre antenado em tudo.";
+"Mental: \n When turning on the TV, being on social media, reading false information are often intentions that are not good for us, that do not concern our own lives. It stays in our mind, taking up space and causing worries, so our mind becomes a garbage dump." = "Mental: \n Ao ligar a tv, estarmos nas redes sociais, lendo informações falsas, muitas vezes são intenções que não são boas pra gente, que não dizem respeito a nossa própria vida. Isso fica em nossa mente, ocupando espaço e causando preocupações e nossa mente vira um depósito de lixo.";
+
+//onboarding1
+
+"Being minimalist is a process of reflection." = "Ser minimalista é um processo de reflexão";
+"With small periodic tasks, you'll start to sort out items or actions that don't make you happy." = "Com pequenas tasks periódicas, você começará a separar itens ou ações que não te deixam feliz";
+"At the end of each stage you will see how many items you managed to let go of." = "No final de cada fase, você irá ver quando itens conseguiu se desapegar";
+"Understand minimalism" = "Entenda o minimalismo";
+"Start your detachment process" = "Comece seu processo de desapego";
+"See results" = "Veja resultados";
+
+//onboarding2
+"Does this spark joy?" = "Isso me traz felicidade?";
+"Are you always running out of money?" = "Você sempre está precisando de dinheiro?";
+"Does this item add value to my life?" = "Esse valor adicionar valor a minha vida?";
+"Minimalism is about thinking and not just getting rid of items" = "Minimalismo é sobre pensar e não somente se livrar de itens";
+"What could I do with the extra space?" = "O que eu posso fazer com espaço extra?";
+"How do I use technology and social media?" = "Como eu uso as redes sociais?";
+
+//onboarding3
+"How it works" = "Como funciona";
+"With tasks that can be completed as often as you want, you go through a process of becoming minimalist in the main pillars.\n \n On the main page you will find all the items you have and with each completed task it will disappear!" = "Com tarefas que podem ser concluídas quantas vezes você quiser, você passa por um processo de se tornar minimalista nos principais pilares.\n \n Na página principal você encontra todos os itens que você tem e a cada tarefa concluída ele desaparecerá!";
+
+//popup
+"You already let go of things!" = "Você já se desapegou de itens";
+
+//jason Achieved
+//títulos
+"Baby Steps"= "Baby Step";
+"Happy feet"= "Pé feliz";
+"Little  Grasshopper"= "Pequeno gafanhoto";
+"Fresh air"= "Ar fresco";
+"Save the trees"= "Salve as árvores";
+"Bye pens"= "Tchau canetas";
+"Throw away"= "Jogar fora";
+"Unpack"= "Desfazer";
+"No more ads"= "Sem propagandas";
+"Free memory"= "Memória livre";
+"The real ones"= "Os de verdade";
+
+//textos
+"3 complete task"= "3 tarefas completas";
+"Let go of tennis"= "Se livre dos tênis";
+"10 tasks completed"= "10 tarefas completas";
+"Complete the Bathroom clean"= "Complete a limpa do banheiro";
+"Keep only the essentials"= "Tenha só o essencial";
+"Only what works"= "Só o que funciona";
+"Conscious christmas spirit"= "Consciente natalino";
+"Complete the material clean"= "Complete a limpa material";
+"Clean email"= "Limpe o email";
+"Complete the Digital pillar"= "Complete o pilar digital";
+"Complete the relational cleanse"= "Complete a limpa relacional";
+
+//socorro
+//goal
+//tipos
+"Material Minimalism"= "Minimalismo Material";
+"Digital Minimalism"= "Minimalismo Digital";
+"Mental Minimalism"= "Minimalismo Mental";
+"Relational Minimalism"= "Minimalismo Relacional";
+
+//subcategorias
+"Wardrobe"= "Guarda-roupa";
+"Bathroom"= "Banheiro";
+"Papers and documents"= "Papéis e documentos";
+"Miscellaneous items"= "Diversos itens";
+"Sentimental Items"= "Itens sentimentais";
+"Social networks"= "Social networks";
+"Files"= "Arquivos";
+"Rethink"= "Repense";
+"Happiness"= "Felicidade";
+
+//frases
+"Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.)."= "Separate top clothes that you no longer wear or that are too small (t-shirts, blouses, etc.).";
+"Unpaired socks and old, stained, torn underwear."= "Meias sem par e roupas íntimas velhas, manchadas e rasgadas.";
+"Underwear that you no longer wear or that are too small (pants, skirts, shorts, etc.)."= "Roupas de baixo que você não usa mais ou que são muito pequenas (calças, saias, shorts, etc.).";
+"Accessories you haven't used in a while - Glasses, watch, Earrings without pair; accessory, Oxidized jewelry."= "Acessórios que não usa há algum tempo - Óculos, relógio, Brincos sem par; acessório, joias oxidadas.";
+"Old, unused shoes that hurt."= "Sapatos velhos e sem uso que doem.";
+"Clothing for events and parties (it is often better to rent clothes for these events than to always buy something different)."= "Roupas para eventos e festas (muitas vezes é melhor alugar roupas para esses eventos do que sempre comprar algo diferente).";
+"Defective or unused bags, suitcases and wallets."= "Sacolas, malas e carteiras defeituosos ou não utilizados.";
+"Bored, stained or very old bedding that are in poor condition"= "Roupa de cama manchada ou muito velha em mau estado";
+"Gifts you have received but do not use."= "Presentes que ganhou e não usa.";
+"Expired products - Sample of products, shampoo, makeup, skincare, medicines."= "Produtos expirados - Amostra de produtos, shampoo, maquiagem, skincare, medicamentos.";
+"Repeat products."= "Produtos repetidos";
+"Packages with few products that are no longer used."= "Embalagens com poucos produtos que não são mais usados.";
+"Excess of documents, slips and vouchers saved that can already be thrown away or scanned, with guarantees already expired or with a deadline already fulfilled."= "Excesso de documentos, boletos e comprovantes guardados que já podem ser jogados fora ou escaneados, com garantias já vencidas ou com prazo já cumprido.";
+"Instruction manuals."= "Manuais de instrução";
+"Christmas card, store cards."= "Cartões natalinos e de lojas";
+"Notebooks that have been stored for a long time and are not being used."= "Notebooks que foram armazenados por muito tempo e não estão sendo usados.";
+"DVDs, disks, flash drives."= "DVDs, discos, pen drives.";
+"Pens that don't work."= "Canetas que não funcionam";
+"Books, consider between entertainment and practical."= "Livros, considere entre entretenimento e prático.";
+"Unused appliances - headphones, chargers."= "Aparelhos não utilizados - fones de ouvido, carregadores.";
+"Decoration Items - Unused Christmas decorations."= "Itens de Decoração - Decorações de Natal não utilizadas.";
+"Unused kitchen utensils, like Plastic pots without lids or lids without pots."= "Utensílios de cozinha não utilizados, como potes de plástico sem tampa ou tampas sem potes.";
+"Excess plastic bags."= "Excesso de sacos plásticos.";
+"Let go of 10 small items."= "Se livre 10 itens pequenos.";
+"Photos."= "Fotos";
+"Clothes that remind people or childhood."= "Roupas que lembram pessoas ou infância.";
+"Objects remind people or moments and phases."= "Objetos que lembram pessoas ou infância.";
+"Old schoolbooks/papers."= "Livros/papéis antigos.";
+"Go to Settings > Screen Time and see how much time on the cell phone is needed? If not, rethink the amount of time and put a limit on usage on apps that you think are time consuming."= "Vá em Configurações > Tempo de Tela e veja quanto tempo no celular é necessário? Caso contrário, repense a quantidade de tempo e coloque um limite no uso de aplicativos que você acha que consomem tempo.";
+"Clean up your email, deleting old emails, advertisements, or describing the company email channel."= "Limpe seu e-mail, excluindo e-mails antigos, anúncios ou descrevendo o canal de e-mail da empresa.";
+"Think about your addictions, is there a website, app or digital space that doesn't do you good? If you don't change or decrease your use."= "Pense nos seus vícios, existe algum site, aplicativo ou espaço digital que não te faz bem? Se você não alterar ou diminuir seu uso.";
+"In the main communication channel you use, delete old messages or groups that you no longer need."= "No canal de comunicação principal que você usa, exclua mensagens antigas ou grupos que você não precisa mais.";
+"View your cell phone photo album and see prints or images that are taking up space."= "Visualize o álbum de fotos do seu celular e veja prints ou imagens que estão ocupando espaço.";
+"On your computer, see files that you no longer need and that can be saved in different places."= "No seu computador, veja os arquivos que você não precisa mais e que podem ser salvos em diferentes lugares.";
+"Rethink the types of information you consume in all media and ask yourself: Are the intentions good? Do they concern the process of personal evolution? We often get stuck in something that is not in our life and we waste time with these worries." = "Repense os tipos de informação que você consome em todas as mídias e se pergunte: as intenções são boas? Eles dizem respeito ao processo de evolução pessoal? Muitas vezes ficamos presos em algo que não está na nossa vida e perdemos tempo com essas preocupações.";
+"Make a list of people who bring you happiness."= "Faça uma lista de pessoas que lhe trazem felicidade.";
+
+"Done"="Concluído";
+"Continue"="Continuar";
+"Hi!"="Olá!";
+"Goal"="Meta";
+"Process"="Progresso";
+"Achievements"="Conquistas";
+"Achieved"="Conquistado";
+"Clutter"="Desordem";
+"Minimalism"="Minimalismo";
+

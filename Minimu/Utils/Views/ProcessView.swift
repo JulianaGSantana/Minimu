@@ -32,19 +32,19 @@ struct ProcessView: View {
                         ZStack{
                     VStack(alignment:.leading){
                        
-                        Text("Goal")
+                        Text("Goal".localized())
                             .font(.title.bold())
                             .padding(.leading)
 
                         
                         HStack{
                             if counterFetcher.counter >= 36{
-                                Text("You reached the end!")
+                                Text("You reached the end!".localized())
                                     .font(.title3.bold())
                                     .padding(.leading)
                             } else {
                                 
-                            Text(modalData.goals[counterFetcher.counter].minType)
+                                Text(modalData.goals[counterFetcher.counter].minType.localized())
                                 .font(.title3.bold())
                                 .padding(.leading)
                             }
@@ -64,12 +64,12 @@ struct ProcessView: View {
                         }
                        
                         if counterFetcher.counter >= 36{
-                            Text("Coming Soon new tasks")
+                            Text("Coming Soon new tasks".localized())
                                 .font(.headline)
                                 .foregroundColor(Color.secondary)
                                 .padding(.leading)
                         } else {
-                        Text(modalData.goals[counterFetcher.counter].typesubcategory)
+                            Text(modalData.goals[counterFetcher.counter].typesubcategory.localized())
                             .font(.headline)
                             .foregroundColor(Color.secondary)
                             .padding(.leading)
@@ -78,7 +78,7 @@ struct ProcessView: View {
                         if counterFetcher.counter >= 36{
                           Text(" ")
                         } else {
-                        Checkmarker(goals: modalData.goals[counterFetcher.counter])
+                            Checkmarker(goals: modalData.goals[counterFetcher.counter])
                         
                             .ignoresSafeArea()
                             .onTapGesture {
@@ -92,7 +92,7 @@ struct ProcessView: View {
             }
                         }
                         
-                        Text( "Things that you already discard: \(data)")
+                        Text( "Things that you already discard: \(data)".localized())
                          
                             .font(.subheadline)
                             .fontWeight(.semibold)
@@ -102,12 +102,12 @@ struct ProcessView: View {
 
                         Spacer()
         
-                        Text("Achievements")
+                        Text("Achievements".localized())
                             .font(.title.bold())
                             .padding(.leading)
                         
                     
-                        Text("Achieved")
+                        Text("Achieved".localized())
                             .font(.title3.bold())
                             .padding(.leading)
                             

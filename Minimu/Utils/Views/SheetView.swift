@@ -24,7 +24,7 @@ struct SheetView: View {
                         .frame(width: 120, height: 120)
                         .padding()
                     
-                    Text("How many items did you manage to discard?")
+                    Text("How many items did you manage to discard?".localized())
                         .font(.title2.bold())
                         .frame(width: 350, alignment: .center)
                    
@@ -51,7 +51,7 @@ struct SheetView: View {
                         
                         
                     }){
-                        Text("Done")
+                        Text("Done".localized())
                         //  showOnBoarding.toggle()
                         
                             .foregroundColor(.white)

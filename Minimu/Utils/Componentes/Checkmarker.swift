@@ -30,7 +30,7 @@ struct Checkmarker: View {
                         
                     } .padding()  
                     // Text("Look for socks without pair, ")
-                    Text(self.goals.frase)
+                    Text(self.goals.frase.localized())
                     
                 }.padding(.horizontal)
                     .padding(.bottom, 20)

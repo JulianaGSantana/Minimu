@@ -26,13 +26,13 @@ struct AchievedCard: View {
                         .scaledToFit()
                         .frame(width: 69, height: 90)
 
-                    Text(self.achieves.title) //achieved.title //self.goals.frase
+                    Text(self.achieves.title.localized()) //achieved.title //self.goals.frase
                         .font(.headline)
                       //  .font(.subheadline)
                         .foregroundColor(.secondary)
                        
                     
-                    Text(self.achieves.text)
+                    Text(self.achieves.text.localized())
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }

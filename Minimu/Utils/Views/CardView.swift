@@ -27,7 +27,7 @@ struct CardView: View {
         
         NavigationView {
             VStack{
-                Text("How many items did you manage to discard?")
+                Text("How many items did you manage to discard?".localized())
                     .font(.title2.bold())
                     .frame(width: 350, alignment: .center)
                
@@ -69,7 +69,7 @@ struct CardView: View {
 //                    goals.remove(at: position)
                     
                 }){
-                    Text("Done")
+                    Text("Done".localized())
                     //  showOnBoarding.toggle()
                     
                         .foregroundColor(.white)

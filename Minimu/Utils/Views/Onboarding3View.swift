@@ -25,7 +25,7 @@ struct Onboarding3View: View {
                              .frame(width: 300, alignment: .center)
                              .padding()
             
-            Text("With tasks that can be completed as often as you want, you go through a process of becoming minimalist in the main pillars.\n \n On the main page you will find all the items you have and with each completed task it will disappear!")
+            Text("With tasks that can be completed as often as you want, you go through a process of becoming minimalist in the main pillars.\n \n On the main page you will find all the items you have and with each completed task it will disappear!".localized())
 //            until your mind is clear and waiting for new challenges. And there are also achievements!
              //   .frame(width: .infinity, alignment: .center)
                 .padding()

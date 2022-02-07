@@ -38,6 +38,8 @@
 		147028F3278F211A00D4A106 /* Minimu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 147028F1278F211A00D4A106 /* Minimu.xcdatamodeld */; };
 		1498F3CE27ADC374009A6208 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1498F3CD27ADC374009A6208 /* Stickers.xcassets */; };
 		1498F3D227ADC374009A6208 /* stickerPack.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1498F3CB27ADC372009A6208 /* stickerPack.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14D1FFAC27B1899800BCD394 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D1FFAB27B1899800BCD394 /* String+Localizable.swift */; };
+		14D1FFB027B18CBF00BCD394 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D1FFB227B18CBF00BCD394 /* Localizable.strings */; };
 		14F610CF279F861B00AD4F20 /* achieved.json in Resources */ = {isa = PBXBuildFile; fileRef = 14F610CE279F861B00AD4F20 /* achieved.json */; };
 		14F610D1279F864100AD4F20 /* Achieved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D0279F864100AD4F20 /* Achieved.swift */; };
 		14F610DA27A1C57200AD4F20 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F610D927A1C57200AD4F20 /* SheetView.swift */; };
@@ -103,6 +105,9 @@
 		1498F3CB27ADC372009A6208 /* stickerPack.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = stickerPack.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1498F3CD27ADC374009A6208 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		1498F3CF27ADC374009A6208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D1FFAB27B1899800BCD394 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		14D1FFB127B18CBF00BCD394 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14D1FFB327B18CC100BCD394 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		14F610CE279F861B00AD4F20 /* achieved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achieved.json; sourceTree = "<group>"; };
 		14F610D0279F864100AD4F20 /* Achieved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achieved.swift; sourceTree = "<group>"; };
 		14F610D927A1C57200AD4F20 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				14399E3A27923F8900D455CF /* ColorExtension.swift */,
+				14D1FFAB27B1899800BCD394 /* String+Localizable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 		147028E5278F211700D4A106 /* Minimu */ = {
 			isa = PBXGroup;
 			children = (
+				14D1FFAD27B18AA400BCD394 /* Language */,
 				141CDCFD2791B29D003754C9 /* Utils */,
 				147028EA278F211A00D4A106 /* Assets.xcassets */,
 				147028EF278F211A00D4A106 /* Persistence.swift */,
@@ -227,6 +234,14 @@
 				1498F3CF27ADC374009A6208 /* Info.plist */,
 			);
 			path = stickerPack;
+			sourceTree = "<group>";
+		};
+		14D1FFAD27B18AA400BCD394 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				14D1FFB227B18CBF00BCD394 /* Localizable.strings */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 147028DA278F211700D4A106;
 			productRefGroup = 147028E4278F211700D4A106 /* Products */;
@@ -308,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D1FFB027B18CBF00BCD394 /* Localizable.strings in Resources */,
 				1429CB2A279C46D1002D2686 /* goal.json in Resources */,
 				147028EE278F211A00D4A106 /* Preview Assets.xcassets in Resources */,
 				14F610CF279F861B00AD4F20 /* achieved.json in Resources */,
@@ -336,6 +353,7 @@
 				14399E4B27936F3700D455CF /* InformationCard.swift in Sources */,
 				14399E4927936BDB00D455CF /* InformationView.swift in Sources */,
 				147028F0278F211A00D4A106 /* Persistence.swift in Sources */,
+				14D1FFAC27B1899800BCD394 /* String+Localizable.swift in Sources */,
 				14399E382792348300D455CF /* AchievedCard.swift in Sources */,
 				14399E3F2793391200D455CF /* NewDetail.swift in Sources */,
 				14F610DE27A2C09A00AD4F20 /* CustomModalPopups.swift in Sources */,
@@ -372,6 +390,18 @@
 			targetProxy = 1498F3D027ADC374009A6208 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14D1FFB227B18CBF00BCD394 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14D1FFB127B18CBF00BCD394 /* en */,
+				14D1FFB327B18CC100BCD394 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		147028F4278F211A00D4A106 /* Debug */ = {
@@ -555,13 +585,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = R87R6SW4Y7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = stickerPack/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Minimu sticker";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.dev.Juliana.Minimu.stickerPack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -575,13 +605,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = R87R6SW4Y7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = stickerPack/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Minimu sticker";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.dev.Juliana.Minimu.stickerPack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -17,7 +17,7 @@ struct Onboarding2View: View {
           //  Color.backgroundColorGrey .edgesIgnoringSafeArea(.all)
             VStack{
                 Spacer()
-                Text("Does this spark joy?")
+                Text("Does this spark joy?".localized())
                     .font(.title3)
                     .foregroundColor(.secondary)
                     .frame(width: 350, alignment: .leading)
@@ -26,7 +26,7 @@ struct Onboarding2View: View {
                     .padding(.leading,30)
                 
                 
-                Text("Are you always running out of money?")
+                Text("Are you always running out of money?".localized())
                     .foregroundColor(.secondary)
                     .frame(width: 350, alignment: .trailing)
                     .padding()
@@ -34,7 +34,7 @@ struct Onboarding2View: View {
                     .padding(.trailing,30)
                 
                 
-                Text("Does this item add value to my life?")
+                Text("Does this item add value to my life?".localized())
                     .font(.title3)
                     .foregroundColor(.secondary)
                     .frame(width: 350, alignment: .leading)
@@ -43,7 +43,7 @@ struct Onboarding2View: View {
                     .padding(.leading,30)
                 
                 
-                Text("Minimalism is about thinking and not just getting rid of items")
+                Text("Minimalism is about thinking and not just getting rid of items".localized())
                     .font(.title2.bold())
                    // .frame(alignment: .center)
                     //.padding()
@@ -53,7 +53,7 @@ struct Onboarding2View: View {
                 
                 
                 
-                Text("What could I do with the extra space?")
+                Text("What could I do with the extra space?".localized())
                 
                     .foregroundColor(.secondary)
                     .frame(width: 350, alignment: .trailing)
@@ -61,7 +61,7 @@ struct Onboarding2View: View {
                     .padding()
                     .padding(.trailing,30)
                 
-                Text("How do I use technology and social media?")
+                Text("How do I use technology and social media?".localized())
                     .font(.body)
                     .foregroundColor(.secondary)
                     //.frame(width: 300, alignment: .leading)
